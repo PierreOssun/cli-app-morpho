@@ -34,7 +34,18 @@ It prints the evidence file path and opens the viewer if Node.js is installed (`
 ### Second process: run the advice agent
 
 For the recommendation, open the project in Claude Code and run `/vault-advice` with the name of the evidence file.
-For example: `/vault-advice outputs/vault_evidence_Sentora_RLUSD_Main_Steakhouse_Prime_USDC_block<N>.json`, where `<N>` is the block the CLI printed.
+For example: `/vault-advice vault_evidence_Sentora_RLUSD_Main_Steakhouse_Prime_USDC_block26127202.json`.
+
+## Check the output files it produces
+
+One run on the pair above, at block 26127202, is committed in `outputs/` so you can read the results without an RPC key:
+
+| File | Description |
+| --- | --- |
+| [`vault_evidence_…_block26127202.json`](outputs/vault_evidence_Sentora_RLUSD_Main_Steakhouse_Prime_USDC_block26127202.json) | Output of the CLI |
+| [`vault_advice_…_block26127202.md`](outputs/vault_advice_Sentora_RLUSD_Main_Steakhouse_Prime_USDC_block26127202.md) | Output of the `vault-advice` skill on that file |
+
+Start with the advice file: it is one screen long.
 
 ## What is compared
 
