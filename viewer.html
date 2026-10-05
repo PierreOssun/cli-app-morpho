@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vault Evidence</title>
+<style>
+  :root {
+    --bg: #f7f7f5; --card: #ffffff; --text: #1d1d1b; --muted: #6b6b66; --line: #e4e4df;
+    --accent: #2f5d8a; --err-bg: #fbeceb; --err: #a33a32; --chip: #eef2f6;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #161615; --card: #1f1f1d; --text: #ececea; --muted: #9a9a94; --line: #34342f;
+      --accent: #8cb4dc; --err-bg: #3a2220; --err: #f0a49c; --chip: #262c33;
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 14px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 1200px; margin: 0 auto; padding: 24px 16px 48px; }
+  h1 { font-size: 22px; margin: 0 0 4px; }
+  .sub { color: var(--muted); margin: 0 0 20px; }
+  .meta { display: flex; flex-wrap: wrap; gap: 8px 20px; padding: 12px 16px; background: var(--card); border: 1px solid var(--line); border-radius: 8px; margin-bottom: 20px; font-size: 13px; }
+  .meta b { color: var(--muted); font-weight: 500; margin-right: 6px; }
+  .mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; word-break: break-all; }
+  .loader { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 20px; }
+  .loader input[type=text] { flex: 1 1 320px; padding: 6px 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--card); color: var(--text); }
+  button { padding: 6px 12px; border: 1px solid var(--line); border-radius: 6px; background: var(--card); color: var(--text); cursor: pointer; }
+  .wrap { overflow-x: auto; background: var(--card); border: 1px solid var(--line); border-radius: 8px; }
+  table { width: 100%; border-collapse: collapse; min-width: 760px; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+  thead th { font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); background: var(--card); position: sticky; top: 0; }
+  thead th.vault { text-transform: none; letter-spacing: 0; font-size: 14px; color: var(--text); width: 30%; }
+  .group td { background: var(--chip); font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: var(--accent); padding: 6px 12px; }
+  .fact { font-weight: 600; }
+  .id { color: var(--muted); font-size: 12px; }
+  .desc { color: var(--muted); font-size: 13px; margin-top: 2px; }
+  .val { font-size: 16px; font-variant-numeric: tabular-nums; }
+  .err { display: inline-block; background: var(--err-bg); color: var(--err); border-radius: 4px; padding: 2px 6px; font-size: 12px; }
+  .kind { font-size: 11px; color: var(--muted); }
+  details { margin-top: 6px; font-size: 12px; }
+  summary { cursor: pointer; color: var(--accent); }
+  .reads { margin-top: 6px; max-height: 260px; overflow: auto; border: 1px solid var(--line); border-radius: 6px; }
+  .reads table { min-width: 0; }
+  .reads td, .reads th { padding: 4px 6px; font-size: 11px; }
+  .mk { width: 100%; min-width: 0; margin-top: 6px; }
+  .mk td, .mk th { padding: 3px 6px; font-size: 12px; border-bottom: 1px solid var(--line); }
+  .mk th { color: var(--muted); font-weight: 500; position: static; }
+  .note { color: var(--muted); font-size: 12px; margin-top: 16px; }
+  .hidden { display: none; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Vault Evidence</h1>
+  <p class="sub">Two Morpho Vault V2 vaults on Ethereum, read on-chain at one block. Raw evidence only: no scores, no opinions.</p>
+
+  <div class="loader">
+    <input id="path" type="text" placeholder="outputs/vault_evidence_….json">
+    <button id="load">Load</button>
+    <span class="sub" style="margin:0">or</span>
+    <input id="file" type="file" accept=".json">
+  </div>
+  <p id="error" class="err hidden"></p>
+
+  <div id="view" class="hidden">
+    <div class="meta" id="meta"></div>
+    <div class="wrap"><table id="facts"></table></div>
+    <p class="note">Each value is at the pinned block. Derived facts are computed by the CLI from the listed reads; open "Reads" to see every on-chain call behind a value. Yield is variable and excludes rewards.</p>
+  </div>
+</main>
+
+<script>
+// What each fact means, keyed by fact id without the vault prefix.
+const CATALOGUE = [
+  ["Metadata", "meta.name", "Vault name", "Display name read from the vault contract."],
+  ["Metadata", "asset.symbol", "Deposit asset", "What you deposit. Same asset means the two vaults compare like-for-like."],
+  ["APY", "apy.net", "Net APY now", "Native yield at this block after fees, using Morpho's supply APY formula weighted by the vault's market allocations. Excludes rewards."],
+  ["APY", "fees.performance", "Performance fee", "Share of the yield the curator keeps."],
+  ["Total deposits", "tvl.totalAssets", "Total deposits", "Assets held by the vault: size, and whether a ticket would dominate it."],
+  ["Total deposits", "tvl.change.30d", "Deposit change, 30 days", "Is money arriving or leaving?"],
+  ["Liquidity", "liquidity.availableRatio", "Withdrawable now (share)", "Share of the vault a normal withdrawal could pay out at this block: idle cash, then the one market behind the liquidity adapter."],
+  ["Liquidity", "liquidity.availableNow", "Withdrawable now (amount)", "Amount a normal withdrawal could pay out now. That market's cash is shared with its other lenders; money in other markets needs the curator or a forced exit."],
+  ["Exposure", "exposure.markets", "Markets backing the deposit", "Each lending market the vault supplies to: collateral, liquidation LTV, utilization, supply APY and share of deposits."],
+  ["Exposure", "exposure.topMarketShare", "Largest single market", "Share of deposits in the biggest market: concentration risk."],
+  ["Performance", "perf.realized.30d", "Realized yield, 30 days", "What depositors actually earned, annualized, from the share-price change. Negative means a loss."],
+  ["Performance", "perf.realized.90d", "Realized yield, 90 days", "Same over 90 days: does the yield hold up over time?"],
+];
+
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+const short = (a) => a && a.length > 14 ? a.slice(0, 6) + "…" + a.slice(-4) : a;
+
+function showError(msg) { $("error").textContent = msg; $("error").classList.remove("hidden"); }
+
+function render(e) {
+  $("error").classList.add("hidden");
+  const A = e.vaults.A, B = e.vaults.B;
+  const fact = (v, label, key) => v.facts.find((f) => f.id === `${label}.${key}`);
+  const name = (v, label) => fact(v, label, "meta.name")?.display ?? label;
+  const date = new Date(e.blockTimestamp * 1000).toISOString().replace("T", " ").slice(0, 16) + " UTC";
+
+  $("meta").innerHTML = [
+    ["Chain", e.chainId === 1 ? "Ethereum (1)" : e.chainId],
+    ["Block", e.block],
+    ["Time", date],
+    ["30d block", e.blocks["30d"]],
+    ["90d block", e.blocks["90d"]],
+    ["Schema", e.schema],
+  ].map(([k, v]) => `<span><b>${k}</b>${typeof v === "string" && v.startsWith("<") ? v : esc(v)}</span>`).join("");
+
+  const head = `<thead><tr><th style="width:30%">Fact</th>
+    <th class="vault">A · ${esc(name(A, "A"))}<div class="id mono">${esc(A.address)}</div></th>
+    <th class="vault">B · ${esc(name(B, "B"))}<div class="id mono">${esc(B.address)}</div></th></tr></thead>`;
+
+  let group = "", rows = "";
+  for (const [g, key, title, desc] of CATALOGUE) {
+    if (g !== group) { group = g; rows += `<tr class="group"><td colspan="3">${esc(g)}</td></tr>`; }
+    rows += `<tr><td><div class="fact">${esc(title)}</div><div class="id mono">${esc(key)}</div><div class="desc">${esc(desc)}</div></td>
+      <td>${cell(fact(A, "A", key), A)}</td><td>${cell(fact(B, "B", key), B)}</td></tr>`;
+  }
+  $("facts").innerHTML = head + `<tbody>${rows}</tbody>`;
+  $("view").classList.remove("hidden");
+}
+
+function cell(f, vault) {
+  if (!f) return `<span class="err">missing</span>`;
+  if (f.status !== "ok") return `<span class="err">${esc(f.reason || f.status)}</span>`;
+  let html = `<div class="val">${esc(f.display)}</div><div class="kind">${esc(f.kind)}${f.unit ? " · " + esc(f.unit) : ""}</div>`;
+  if (Array.isArray(f.value)) html += markets(f.value);
+  const names = f.source ? [f.source.name] : (f.inputs || []);
+  const reads = f.source ? [f.source] : names.map((n) => vault.reads.find((r) => r.name === n)).filter(Boolean);
+  if (f.formula || reads.length) {
+    html += `<details><summary>Reads (${reads.length})</summary>`;
+    if (f.formula) html += `<div class="desc">${esc(f.formula)}</div>`;
+    html += `<div class="reads"><table><tr><th>name</th><th>to</th><th>call</th><th>args</th><th>result</th></tr>${reads.map((r) =>
+      `<tr><td>${esc(r.name)}</td><td class="mono" title="${esc(r.to)}">${esc(short(r.to))}</td><td class="mono">${esc(r.call)}</td>
+       <td class="mono">${esc(r.args.map(short).join(", "))}</td><td class="mono">${esc(r.result.map(short).join(", "))}</td></tr>`).join("")}</table></div></details>`;
+  }
+  return html;
+}
+
+function markets(list) {
+  const sorted = [...list].sort((a, b) => (a.marketId === "idle") - (b.marketId === "idle") || parseFloat(b.share) - parseFloat(a.share));
+  return `<table class="mk"><tr><th>Collateral</th><th>LLTV</th><th>Util.</th><th>Supply APY</th><th>Share</th></tr>${sorted.map((m) =>
+    m.marketId === "idle"
+      ? `<tr><td><i>idle cash</i></td><td></td><td></td><td></td><td>${esc(m.share)}</td></tr>`
+      : `<tr><td title="${esc(m.marketId)}">${esc(m.collateralSymbol)}</td><td>${esc(m.lltv)}</td><td>${esc(m.utilization)}</td><td>${esc(m.supplyApy)}</td><td>${esc(m.share)}</td></tr>`).join("")}</table>`;
+}
+
+async function loadPath(path) {
+  try {
+    const res = await fetch(path);
+    if (!res.ok) throw new Error(`${res.status} ${res.statusText}`);
+    render(await res.json());
+    history.replaceState(null, "", `?file=${encodeURIComponent(path)}`);
+  } catch (err) { showError(`Could not load ${path}: ${err.message}`); }
+}
+
+$("load").onclick = () => loadPath($("path").value.trim());
+$("path").onkeydown = (ev) => { if (ev.key === "Enter") loadPath($("path").value.trim()); };
+$("file").onchange = async (ev) => {
+  try { render(JSON.parse(await ev.target.files[0].text())); } catch (err) { showError(`Invalid JSON: ${err.message}`); }
+};
+const initial = new URLSearchParams(location.search).get("file");
+if (initial) { $("path").value = initial; loadPath(initial); }
+</script>
+</body>
+</html>

@@ -1,0 +1,2702 @@
+{
+  "schema": "vault-evidence/1",
+  "chainId": 1,
+  "block": 26127202,
+  "blockTimestamp": 1791215783,
+  "blocks": {
+    "30d": 25911202,
+    "90d": 25479202
+  },
+  "vaults": {
+    "A": {
+      "address": "0x6dc58a0fdfc8d694e571dc59b9a52eeea780e6bf",
+      "reads": [
+        {
+          "name": "name",
+          "to": "0x6dc58a0fdfc8d694e571dc59b9a52eeea780e6bf",
+          "call": "name()(string)",
+          "args": [],
+          "block": 26127202,
+          "result": [
+            "Sentora RLUSD Main"
+          ]
+        },
+        {
+          "name": "asset",
+          "to": "0x6dc58a0fdfc8d694e571dc59b9a52eeea780e6bf",
+          "call": "asset()(address)",
+          "args": [],
+          "block": 26127202,
+          "result": [
+            "0x8292Bb45bf1Ee4d140127049757C2E0fF06317eD"
+          ]
+        },
+        {
+          "name": "totalAssets",
+          "to": "0x6dc58a0fdfc8d694e571dc59b9a52eeea780e6bf",
+          "call": "totalAssets()(uint256)",
+          "args": [],
+          "block": 26127202,
+          "result": [
+            "466180605698377954735469191"
+          ]
+        },
+        {
+          "name": "performanceFee",
+          "to": "0x6dc58a0fdfc8d694e571dc59b9a52eeea780e6bf",
+          "call": "performanceFee()(uint96)",
+          "args": [],
+          "block": 26127202,
+          "result": [
+            "100000000000000000"
+          ]
+        },
+        {
+          "name": "managementFee",
+          "to": "0x6dc58a0fdfc8d694e571dc59b9a52eeea780e6bf",
+          "call": "managementFee()(uint96)",
+          "args": [],
+          "block": 26127202,
+          "result": [
+            "0"
+          ]
+        },
+        {
+          "name": "maxRate",
+          "to": "0x6dc58a0fdfc8d694e571dc59b9a52eeea780e6bf",
+          "call": "maxRate()(uint64)",
+          "args": [],
+          "block": 26127202,
+          "result": [
+            "63419583967"
+          ]
+        },
+        {
+          "name": "liquidityAdapter",
+          "to": "0x6dc58a0fdfc8d694e571dc59b9a52eeea780e6bf",
+          "call": "liquidityAdapter()(address)",
+          "args": [],
+          "block": 26127202,
+          "result": [
+            "0x0000000000000000000000000000000000000000"
+          ]
+        },
+        {
+          "name": "liquidityData",
+          "to": "0x6dc58a0fdfc8d694e571dc59b9a52eeea780e6bf",
+          "call": "liquidityData()(bytes)",
+          "args": [],
+          "block": 26127202,
+          "result": [
+            "0x"
+          ]
+        },
+        {
+          "name": "shareDecimals",
+          "to": "0x6dc58a0fdfc8d694e571dc59b9a52eeea780e6bf",
+          "call": "decimals()(uint8)",
+          "args": [],
+          "block": 26127202,
+          "result": [
+            "18"
+          ]
+        },
+        {
+          "name": "decimals",
+          "to": "0x8292bb45bf1ee4d140127049757c2e0ff06317ed",
+          "call": "decimals()(uint8)",
+          "args": [],
+          "block": 26127202,
+          "result": [
+            "18"
+          ]
+        },
+        {
+          "name": "symbol",
+          "to": "0x8292bb45bf1ee4d140127049757c2e0ff06317ed",
+          "call": "symbol()(string)",
+          "args": [],
+          "block": 26127202,
+          "result": [
+            "RLUSD"
+          ]
+        },
+        {
+          "name": "idle",
+          "to": "0x8292bb45bf1ee4d140127049757c2e0ff06317ed",
+          "call": "balanceOf(address)(uint256)",
+          "args": [
+            "0x6dC58a0FdfC8D694e571DC59B9A52EEEa780E6bf"
+          ],
+          "block": 26127202,
+          "result": [
+            "62531208362947541878335185"
+          ]
+        },
+        {
+          "name": "sharePrice",
+          "to": "0x6dc58a0fdfc8d694e571dc59b9a52eeea780e6bf",
+          "call": "convertToAssets(uint256)(uint256)",
+          "args": [
+            "1000000000000000000000000000000"
+          ],
+          "block": 26127202,
+          "result": [
+            "1013425486765824721418494429373"
+          ]
+        },
+        {
+          "name": "sharePrice@30d",
+          "to": "0x6dc58a0fdfc8d694e571dc59b9a52eeea780e6bf",
+          "call": "convertToAssets(uint256)(uint256)",
+          "args": [
+            "1000000000000000000000000000000"
+          ],
+          "block": 25911202,
+          "result": [
+            "1011073966493871706200480971508"
+          ]
+        },
+        {
+          "name": "totalAssets@30d",
+          "to": "0x6dc58a0fdfc8d694e571dc59b9a52eeea780e6bf",
+          "call": "totalAssets()(uint256)",
+          "args": [],
+          "block": 25911202,
+          "result": [
+            "349823092469634492663730824"
+          ]
+        },
+        {
+          "name": "sharePrice@90d",
+          "to": "0x6dc58a0fdfc8d694e571dc59b9a52eeea780e6bf",
+          "call": "convertToAssets(uint256)(uint256)",
+          "args": [
+            "1000000000000000000000000000000"
+          ],
+          "block": 25479202,
+          "result": [
+            "1006651905764453980995768028326"
+          ]
+        },
+        {
+          "name": "totalAssets@90d",
+          "to": "0x6dc58a0fdfc8d694e571dc59b9a52eeea780e6bf",
+          "call": "totalAssets()(uint256)",
+          "args": [],
+          "block": 25479202,
+          "result": [
+            "232512152273343898311137244"
+          ]
+        },
+        {
+          "name": "adaptersLength",
+          "to": "0x6dc58a0fdfc8d694e571dc59b9a52eeea780e6bf",
+          "call": "adaptersLength()(uint256)",
+          "args": [],
+          "block": 26127202,
+          "result": [
+            "1"
+          ]
+        },
+        {
+          "name": "adapter0",
+          "to": "0x6dc58a0fdfc8d694e571dc59b9a52eeea780e6bf",
+          "call": "adapters(uint256)(address)",
+          "args": [
+            "0"
+          ],
+          "block": 26127202,
+          "result": [
+            "0x3C6EAB22cFc03fc32AD1bf836f2F886A5015DFFF"
+          ]
+        },
+        {
+          "name": "adapter0.morpho",
+          "to": "0x3c6eab22cfc03fc32ad1bf836f2f886a5015dfff",
+          "call": "morpho()(address)",
+          "args": [],
+          "block": 26127202,
+          "result": [
+            "0xBBBBBbbBBb9cC5e90e3b3Af64bdAF62C37EEFFCb"
+          ]
+        },
+        {
+          "name": "adapter0.marketIdsLength",
+          "to": "0x3c6eab22cfc03fc32ad1bf836f2f886a5015dfff",
+          "call": "marketIdsLength()(uint256)",
+          "args": [],
+          "block": 26127202,
+          "result": [
+            "10"
+          ]
+        },
+        {
+          "name": "m0.id",
+          "to": "0x3c6eab22cfc03fc32ad1bf836f2f886a5015dfff",
+          "call": "marketIds(uint256)(bytes32)",
+          "args": [
+            "0"
+          ],
+          "block": 26127202,
+          "result": [
+            "0xffd010618ed3cb39bb2c5de0e3e58d3d2ec9f52187a180f29723c31756a939bc"
+          ]
+        },
+        {
+          "name": "m0.supply",
+          "to": "0x3c6eab22cfc03fc32ad1bf836f2f886a5015dfff",
+          "call": "expectedSupplyAssets(bytes32)(uint256)",
+          "args": [
+            "0xffd010618ed3cb39bb2c5de0e3e58d3d2ec9f52187a180f29723c31756a939bc"
+          ],
+          "block": 26127202,
+          "result": [
+            "13271164466855867746150444"
+          ]
+        },
+        {
+          "name": "m0.params",
+          "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+          "call": "idToMarketParams(bytes32)(address,address,address,address,uint256)",
+          "args": [
+            "0xffd010618ed3cb39bb2c5de0e3e58d3d2ec9f52187a180f29723c31756a939bc"
+          ],
+          "block": 26127202,
+          "result": [
+            "0x8292Bb45bf1Ee4d140127049757C2E0fF06317eD",
+            "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+            "0x8b36909dD84d310CBDe90cb286d9dAB285a245bd",
+            "0x870aC11D48B15DB9a138Cf899d20F13F79Ba00BC",
+            "860000000000000000"
+          ]
+        },
+        {
+          "name": "m0.state",
+          "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+          "call": "market(bytes32)(uint128,uint128,uint128,uint128,uint128,uint128)",
+          "args": [
+            "0xffd010618ed3cb39bb2c5de0e3e58d3d2ec9f52187a180f29723c31756a939bc"
+          ],
+          "block": 26127202,
+          "result": [
+            "13271147842464095041480219",
+            "13051189723844781743585938642141",
+            "11630534937798339987977962",
+            "11414533646371090854489651726138",
+            "1791214307",
+            "0"
+          ]
+        },
+        {
+          "name": "m0.collateral",
+          "to": "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
+          "call": "symbol()(string)",
+          "args": [],
+          "block": 26127202,
+          "result": [
+            "cbBTC"
+          ]
+        },
+        {
+          "name": "m0.rate",
+          "to": "0x870ac11d48b15db9a138cf899d20f13f79ba00bc",
+          "call": "borrowRateView((address,address,address,address,uint256),(uint128,uint128,uint128,uint128,uint128,uint128))(uint256)",
+          "args": [
+            "(0x8292Bb45bf1Ee4d140127049757C2E0fF06317eD,0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf,0x8b36909dD84d310CBDe90cb286d9dAB285a245bd,0x870aC11D48B15DB9a138Cf899d20F13F79Ba00BC,860000000000000000)",
+            "(13271147842464095041480219,13051189723844781743585938642141,11630534937798339987977962,11414533646371090854489651726138,1791214307,0)"
+          ],
+          "block": 26127202,
+          "result": [
+            "1221358308"
+          ]
+        },
+        {
+          "name": "m1.id",
+          "to": "0x3c6eab22cfc03fc32ad1bf836f2f886a5015dfff",
+          "call": "marketIds(uint256)(bytes32)",
+          "args": [
+            "1"
+          ],
+          "block": 26127202,
+          "result": [
+            "0xea4bfb18df0ee6bffb7b3f0270899a8adb92ab6b684709634c8276128813cfd4"
+          ]
+        },
+        {
+          "name": "m1.supply",
+          "to": "0x3c6eab22cfc03fc32ad1bf836f2f886a5015dfff",
+          "call": "expectedSupplyAssets(bytes32)(uint256)",
+          "args": [
+            "0xea4bfb18df0ee6bffb7b3f0270899a8adb92ab6b684709634c8276128813cfd4"
+          ],
+          "block": 26127202,
+          "result": [
+            "107039019215263617281376013"
+          ]
+        },
+        {
+          "name": "m1.params",
+          "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+          "call": "idToMarketParams(bytes32)(address,address,address,address,uint256)",
+          "args": [
+            "0xea4bfb18df0ee6bffb7b3f0270899a8adb92ab6b684709634c8276128813cfd4"
+          ],
+          "block": 26127202,
+          "result": [
+            "0x8292Bb45bf1Ee4d140127049757C2E0fF06317eD",
+            "0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee",
+            "0x6ab351FfDe101BB24a97332f4f7162C1711f110b",
+            "0x870aC11D48B15DB9a138Cf899d20F13F79Ba00BC",
+            "860000000000000000"
+          ]
+        },
+        {
+          "name": "m1.state",
+          "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+          "call": "market(bytes32)(uint128,uint128,uint128,uint128,uint128,uint128)",
+          "args": [
+            "0xea4bfb18df0ee6bffb7b3f0270899a8adb92ab6b684709634c8276128813cfd4"
+          ],
+          "block": 26127202,
+          "result": [
+            "107016943480724178519845820",
+            "105205462166687563701717677222962",
+            "94244702537759588190641522",
+            "92445960444308636803159543533065",
+            "1791039059",
+            "0"
+          ]
+        },
+        {
+          "name": "m1.collateral",
+          "to": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+          "call": "symbol()(string)",
+          "args": [],
+          "block": 26127202,
+          "result": [
+            "weETH"
+          ]
+        },
+        {
+          "name": "m1.rate",
+          "to": "0x870ac11d48b15db9a138cf899d20f13f79ba00bc",
+          "call": "borrowRateView((address,address,address,address,uint256),(uint128,uint128,uint128,uint128,uint128,uint128))(uint256)",
+          "args": [
+            "(0x8292Bb45bf1Ee4d140127049757C2E0fF06317eD,0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee,0x6ab351FfDe101BB24a97332f4f7162C1711f110b,0x870aC11D48B15DB9a138Cf899d20F13F79Ba00BC,860000000000000000)",
+            "(107016943480724178519845820,105205462166687563701717677222962,94244702537759588190641522,92445960444308636803159543533065,1791039059,0)"
+          ],
+          "block": 26127202,
+          "result": [
+            "1325355027"
+          ]
+        },
+        {
+          "name": "m2.id",
+          "to": "0x3c6eab22cfc03fc32ad1bf836f2f886a5015dfff",
+          "call": "marketIds(uint256)(bytes32)",
+          "args": [
+            "2"
+          ],
+          "block": 26127202,
+          "result": [
+            "0x88abdf8693e663144c3544b9442e9b04520016d6ebc57aa76424c00ab1683c9d"
+          ]
+        },
+        {
+          "name": "m2.supply",
+          "to": "0x3c6eab22cfc03fc32ad1bf836f2f886a5015dfff",
+          "call": "expectedSupplyAssets(bytes32)(uint256)",
+          "args": [
+            "0x88abdf8693e663144c3544b9442e9b04520016d6ebc57aa76424c00ab1683c9d"
+          ],
+          "block": 26127202,
+          "result": [
+            "1383826084770319013314597"
+          ]
+        },
+        {
+          "name": "m2.params",
+          "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+          "call": "idToMarketParams(bytes32)(address,address,address,address,uint256)",
+          "args": [
+            "0x88abdf8693e663144c3544b9442e9b04520016d6ebc57aa76424c00ab1683c9d"
+          ],
+          "block": 26127202,
+          "result": [
+            "0x8292Bb45bf1Ee4d140127049757C2E0fF06317eD",
+            "0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0",
+            "0x4e58cea93a5252547c99D04042de646b17531653",
+            "0x870aC11D48B15DB9a138Cf899d20F13F79Ba00BC",
+            "860000000000000000"
+          ]
+        },
+        {
+          "name": "m2.state",
+          "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+          "call": "market(bytes32)(uint128,uint128,uint128,uint128,uint128,uint128)",
+          "args": [
+            "0x88abdf8693e663144c3544b9442e9b04520016d6ebc57aa76424c00ab1683c9d"
+          ],
+          "block": 26127202,
+          "result": [
+            "1383163335169499296306835",
+            "1360543295185103703954252165596",
+            "1266285391712251859119169",
+            "1242989970033616679197740854589",
+            "1790972651",
+            "0"
+          ]
+        },
+        {
+          "name": "m2.collateral",
+          "to": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+          "call": "symbol()(string)",
+          "args": [],
+          "block": 26127202,
+          "result": [
+            "wstETH"
+          ]
+        },
+        {
+          "name": "m2.rate",
+          "to": "0x870ac11d48b15db9a138cf899d20f13f79ba00bc",
+          "call": "borrowRateView((address,address,address,address,uint256),(uint128,uint128,uint128,uint128,uint128,uint128))(uint256)",
+          "args": [
+            "(0x8292Bb45bf1Ee4d140127049757C2E0fF06317eD,0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0,0x4e58cea93a5252547c99D04042de646b17531653,0x870aC11D48B15DB9a138Cf899d20F13F79Ba00BC,860000000000000000)",
+            "(1383163335169499296306835,1360543295185103703954252165596,1266285391712251859119169,1242989970033616679197740854589,1790972651,0)"
+          ],
+          "block": 26127202,
+          "result": [
+            "2155400358"
+          ]
+        },
+        {
+          "name": "m3.id",
+          "to": "0x3c6eab22cfc03fc32ad1bf836f2f886a5015dfff",
+          "call": "marketIds(uint256)(bytes32)",
+          "args": [
+            "3"
+          ],
+          "block": 26127202,
+          "result": [
+            "0xc0ae375fd761ff19b3f04de5534c0f1ec110f80e1c2ede27c42c1c43c3040394"
+          ]
+        },
+        {
+          "name": "m3.supply",
+          "to": "0x3c6eab22cfc03fc32ad1bf836f2f886a5015dfff",
+          "call": "expectedSupplyAssets(bytes32)(uint256)",
+          "args": [
+            "0xc0ae375fd761ff19b3f04de5534c0f1ec110f80e1c2ede27c42c1c43c3040394"
+          ],
+          "block": 26127202,
+          "result": [
+            "4793245625108316720953347"
+          ]
+        },
+        {
+          "name": "m3.params",
+          "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+          "call": "idToMarketParams(bytes32)(address,address,address,address,uint256)",
+          "args": [
+            "0xc0ae375fd761ff19b3f04de5534c0f1ec110f80e1c2ede27c42c1c43c3040394"
+          ],
+          "block": 26127202,
+          "result": [
+            "0x8292Bb45bf1Ee4d140127049757C2E0fF06317eD",
+            "0x80ac24aA929eaF5013f6436cdA2a7ba190f5Cc0b",
+            "0xf766F4F1Bcb0CBBF4EEF5E26FF7c7f66a713c1B5",
+            "0x870aC11D48B15DB9a138Cf899d20F13F79Ba00BC",
+            "915000000000000000"
+          ]
+        },
+        {
+          "name": "m3.state",
+          "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+          "call": "market(bytes32)(uint128,uint128,uint128,uint128,uint128,uint128)",
+          "args": [
+            "0xc0ae375fd761ff19b3f04de5534c0f1ec110f80e1c2ede27c42c1c43c3040394"
+          ],
+          "block": 26127202,
+          "result": [
+            "4793202025779342967898955",
+            "4692318865929697540257924147537",
+            "4120165292303188809184518",
+            "4022985312835530563943918823757",
+            "1791207827",
+            "0"
+          ]
+        },
+        {
+          "name": "m3.collateral",
+          "to": "0x80ac24aa929eaf5013f6436cda2a7ba190f5cc0b",
+          "call": "symbol()(string)",
+          "args": [],
+          "block": 26127202,
+          "result": [
+            "syrupUSDC"
+          ]
+        },
+        {
+          "name": "m3.rate",
+          "to": "0x870ac11d48b15db9a138cf899d20f13f79ba00bc",
+          "call": "borrowRateView((address,address,address,address,uint256),(uint128,uint128,uint128,uint128,uint128,uint128))(uint256)",
+          "args": [
+            "(0x8292Bb45bf1Ee4d140127049757C2E0fF06317eD,0x80ac24aA929eaF5013f6436cdA2a7ba190f5Cc0b,0xf766F4F1Bcb0CBBF4EEF5E26FF7c7f66a713c1B5,0x870aC11D48B15DB9a138Cf899d20F13F79Ba00BC,915000000000000000)",
+            "(4793202025779342967898955,4692318865929697540257924147537,4120165292303188809184518,4022985312835530563943918823757,1791207827,0)"
+          ],
+          "block": 26127202,
+          "result": [
+            "1364474599"
+          ]
+        },
+        {
+          "name": "m4.id",
+          "to": "0x3c6eab22cfc03fc32ad1bf836f2f886a5015dfff",
+          "call": "marketIds(uint256)(bytes32)",
+          "args": [
+            "4"
+          ],
+          "block": 26127202,
+          "result": [
+            "0x15bb2a6af0c909eed19fb1f2ceeead34ecbdcba626de752c6b09389ee14eec32"
+          ]
+        },
+        {
+          "name": "m4.supply",
+          "to": "0x3c6eab22cfc03fc32ad1bf836f2f886a5015dfff",
+          "call": "expectedSupplyAssets(bytes32)(uint256)",
+          "args": [
+            "0x15bb2a6af0c909eed19fb1f2ceeead34ecbdcba626de752c6b09389ee14eec32"
+          ],
+          "block": 26127202,
+          "result": [
+            "235037998496946508786484125"
+          ]
+        },
+        {
+          "name": "m4.params",
+          "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+          "call": "idToMarketParams(bytes32)(address,address,address,address,uint256)",
+          "args": [
+            "0x15bb2a6af0c909eed19fb1f2ceeead34ecbdcba626de752c6b09389ee14eec32"
+          ],
+          "block": 26127202,
+          "result": [
+            "0x8292Bb45bf1Ee4d140127049757C2E0fF06317eD",
+            "0x73E0C0d45E048D25Fc26Fa3159b0aA04BfA4Db98",
+            "0xBCC3D9834b84B32Cf540DBE948DEd4B47bec5ddb",
+            "0x870aC11D48B15DB9a138Cf899d20F13F79Ba00BC",
+            "860000000000000000"
+          ]
+        },
+        {
+          "name": "m4.state",
+          "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+          "call": "market(bytes32)(uint128,uint128,uint128,uint128,uint128,uint128)",
+          "args": [
+            "0x15bb2a6af0c909eed19fb1f2ceeead34ecbdcba626de752c6b09389ee14eec32"
+          ],
+          "block": 26127202,
+          "result": [
+            "235016024122527152600257935",
+            "232375445138537421625849808517390",
+            "212658751301287328232574055",
+            "209920246936444454262318505772597",
+            "1791131843",
+            "0"
+          ]
+        },
+        {
+          "name": "m4.collateral",
+          "to": "0x73e0c0d45e048d25fc26fa3159b0aa04bfa4db98",
+          "call": "symbol()(string)",
+          "args": [],
+          "block": 26127202,
+          "result": [
+            "kBTC"
+          ]
+        },
+        {
+          "name": "m4.rate",
+          "to": "0x870ac11d48b15db9a138cf899d20f13f79ba00bc",
+          "call": "borrowRateView((address,address,address,address,uint256),(uint128,uint128,uint128,uint128,uint128,uint128))(uint256)",
+          "args": [
+            "(0x8292Bb45bf1Ee4d140127049757C2E0fF06317eD,0x73E0C0d45E048D25Fc26Fa3159b0aA04BfA4Db98,0xBCC3D9834b84B32Cf540DBE948DEd4B47bec5ddb,0x870aC11D48B15DB9a138Cf899d20F13F79Ba00BC,860000000000000000)",
+            "(235016024122527152600257935,232375445138537421625849808517390,212658751301287328232574055,209920246936444454262318505772597,1791131843,0)"
+          ],
+          "block": 26127202,
+          "result": [
+            "1231010755"
+          ]
+        },
+        {
+          "name": "m5.id",
+          "to": "0x3c6eab22cfc03fc32ad1bf836f2f886a5015dfff",
+          "call": "marketIds(uint256)(bytes32)",
+          "args": [
+            "5"
+          ],
+          "block": 26127202,
+          "result": [
+            "0xa128dddc761075df9a9a60689f3a41a989b245aad506352c509c0c3a76a9ec6b"
+          ]
+        },
+        {
+          "name": "m5.supply",
+          "to": "0x3c6eab22cfc03fc32ad1bf836f2f886a5015dfff",
+          "call": "expectedSupplyAssets(bytes32)(uint256)",
+          "args": [
+            "0xa128dddc761075df9a9a60689f3a41a989b245aad506352c509c0c3a76a9ec6b"
+          ],
+          "block": 26127202,
+          "result": [
+            "409402737176565"
+          ]
+        },
+        {
+          "name": "m5.params",
+          "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+          "call": "idToMarketParams(bytes32)(address,address,address,address,uint256)",
+          "args": [
+            "0xa128dddc761075df9a9a60689f3a41a989b245aad506352c509c0c3a76a9ec6b"
+          ],
+          "block": 26127202,
+          "result": [
+            "0x8292Bb45bf1Ee4d140127049757C2E0fF06317eD",
+            "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+            "0xF58725eb213161E9054C97F970DC80b2d0327E8d",
+            "0x870aC11D48B15DB9a138Cf899d20F13F79Ba00BC",
+            "860000000000000000"
+          ]
+        },
+        {
+          "name": "m5.state",
+          "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+          "call": "market(bytes32)(uint128,uint128,uint128,uint128,uint128,uint128)",
+          "args": [
+            "0xa128dddc761075df9a9a60689f3a41a989b245aad506352c509c0c3a76a9ec6b"
+          ],
+          "block": 26127202,
+          "result": [
+            "24330089008029458391191985",
+            "24034096133338424128309779317771",
+            "16962630265216163405937747",
+            "16726348616319032277144948529026",
+            "1791120443",
+            "0"
+          ]
+        },
+        {
+          "name": "m5.collateral",
+          "to": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+          "call": "symbol()(string)",
+          "args": [],
+          "block": 26127202,
+          "result": [
+            "WBTC"
+          ]
+        },
+        {
+          "name": "m5.rate",
+          "to": "0x870ac11d48b15db9a138cf899d20f13f79ba00bc",
+          "call": "borrowRateView((address,address,address,address,uint256),(uint128,uint128,uint128,uint128,uint128,uint128))(uint256)",
+          "args": [
+            "(0x8292Bb45bf1Ee4d140127049757C2E0fF06317eD,0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599,0xF58725eb213161E9054C97F970DC80b2d0327E8d,0x870aC11D48B15DB9a138Cf899d20F13F79Ba00BC,860000000000000000)",
+            "(24330089008029458391191985,24034096133338424128309779317771,16962630265216163405937747,16726348616319032277144948529026,1791120443,0)"
+          ],
+          "block": 26127202,
+          "result": [
+            "806509713"
+          ]
+        },
+        {
+          "name": "m6.id",
+          "to": "0x3c6eab22cfc03fc32ad1bf836f2f886a5015dfff",
+          "call": "marketIds(uint256)(bytes32)",
+          "args": [
+            "6"
+          ],
+          "block": 26127202,
+          "result": [
+            "0x1749e02006bc6bd6a86af52d231511f6911d5e42318e028e51a28dfabc68dd47"
+          ]
+        },
+        {
+          "name": "m6.supply",
+          "to": "0x3c6eab22cfc03fc32ad1bf836f2f886a5015dfff",
+          "call": "expectedSupplyAssets(bytes32)(uint256)",
+          "args": [
+            "0x1749e02006bc6bd6a86af52d231511f6911d5e42318e028e51a28dfabc68dd47"
+          ],
+          "block": 26127202,
+          "result": [
+            "1"
+          ]
+        },
+        {
+          "name": "m6.params",
+          "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+          "call": "idToMarketParams(bytes32)(address,address,address,address,uint256)",
+          "args": [
+            "0x1749e02006bc6bd6a86af52d231511f6911d5e42318e028e51a28dfabc68dd47"
+          ],
+          "block": 26127202,
+          "result": [
+            "0x8292Bb45bf1Ee4d140127049757C2E0fF06317eD",
+            "0x5A19fa369F2895dCD8d2cEE62E4Ceae58eF92BBb",
+            "0x968eb911Db90BB8eA9E4792b05C94500bC1A62D7",
+            "0x870aC11D48B15DB9a138Cf899d20F13F79Ba00BC",
+            "915000000000000000"
+          ]
+        },
+        {
+          "name": "m6.state",
+          "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+          "call": "market(bytes32)(uint128,uint128,uint128,uint128,uint128,uint128)",
+          "args": [
+            "0x1749e02006bc6bd6a86af52d231511f6911d5e42318e028e51a28dfabc68dd47"
+          ],
+          "block": 26127202,
+          "result": [
+            "7069909184401907512",
+            "7008222310384557313495170",
+            "4092073071653789457",
+            "4050652711852142737758671",
+            "1790289947",
+            "0"
+          ]
+        },
+        {
+          "name": "m6.collateral",
+          "to": "0x5a19fa369f2895dcd8d2cee62e4ceae58ef92bbb",
+          "call": "symbol()(string)",
+          "args": [],
+          "block": 26127202,
+          "result": [
+            "PT-sUSDE-13AUG2026"
+          ]
+        },
+        {
+          "name": "m6.rate",
+          "to": "0x870ac11d48b15db9a138cf899d20f13f79ba00bc",
+          "call": "borrowRateView((address,address,address,address,uint256),(uint128,uint128,uint128,uint128,uint128,uint128))(uint256)",
+          "args": [
+            "(0x8292Bb45bf1Ee4d140127049757C2E0fF06317eD,0x5A19fa369F2895dCD8d2cEE62E4Ceae58eF92BBb,0x968eb911Db90BB8eA9E4792b05C94500bC1A62D7,0x870aC11D48B15DB9a138Cf899d20F13F79Ba00BC,915000000000000000)",
+            "(7069909184401907512,7008222310384557313495170,4092073071653789457,4050652711852142737758671,1790289947,0)"
+          ],
+          "block": 26127202,
+          "result": [
+            "134217123"
+          ]
+        },
+        {
+          "name": "m7.id",
+          "to": "0x3c6eab22cfc03fc32ad1bf836f2f886a5015dfff",
+          "call": "marketIds(uint256)(bytes32)",
+          "args": [
+            "7"
+          ],
+          "block": 26127202,
+          "result": [
+            "0xc3b37a18d5b15f8e5b78bcdc014ffb3f22933bde4e5f6a36dedf36db87e68585"
+          ]
+        },
+        {
+          "name": "m7.supply",
+          "to": "0x3c6eab22cfc03fc32ad1bf836f2f886a5015dfff",
+          "call": "expectedSupplyAssets(bytes32)(uint256)",
+          "args": [
+            "0xc3b37a18d5b15f8e5b78bcdc014ffb3f22933bde4e5f6a36dedf36db87e68585"
+          ],
+          "block": 26127202,
+          "result": [
+            "1"
+          ]
+        },
+        {
+          "name": "m7.params",
+          "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+          "call": "idToMarketParams(bytes32)(address,address,address,address,uint256)",
+          "args": [
+            "0xc3b37a18d5b15f8e5b78bcdc014ffb3f22933bde4e5f6a36dedf36db87e68585"
+          ],
+          "block": 26127202,
+          "result": [
+            "0x8292Bb45bf1Ee4d140127049757C2E0fF06317eD",
+            "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+            "0x18803b5c20962244F0A99fC3b7d7e614762385eB",
+            "0x870aC11D48B15DB9a138Cf899d20F13F79Ba00BC",
+            "860000000000000000"
+          ]
+        },
+        {
+          "name": "m7.state",
+          "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+          "call": "market(bytes32)(uint128,uint128,uint128,uint128,uint128,uint128)",
+          "args": [
+            "0xc3b37a18d5b15f8e5b78bcdc014ffb3f22933bde4e5f6a36dedf36db87e68585"
+          ],
+          "block": 26127202,
+          "result": [
+            "1003042351378136797",
+            "1000001000000001001014227",
+            "803041436644392510",
+            "800000000000000000000000",
+            "1781224907",
+            "0"
+          ]
+        },
+        {
+          "name": "m7.collateral",
+          "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "call": "symbol()(string)",
+          "args": [],
+          "block": 26127202,
+          "result": [
+            "WETH"
+          ]
+        },
+        {
+          "name": "m7.rate",
+          "to": "0x870ac11d48b15db9a138cf899d20f13f79ba00bc",
+          "call": "borrowRateView((address,address,address,address,uint256),(uint128,uint128,uint128,uint128,uint128,uint128))(uint256)",
+          "args": [
+            "(0x8292Bb45bf1Ee4d140127049757C2E0fF06317eD,0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2,0x18803b5c20962244F0A99fC3b7d7e614762385eB,0x870aC11D48B15DB9a138Cf899d20F13F79Ba00BC,860000000000000000)",
+            "(1003042351378136797,1000001000000001001014227,803041436644392510,800000000000000000000000,1781224907,0)"
+          ],
+          "block": 26127202,
+          "result": [
+            "244565169"
+          ]
+        },
+        {
+          "name": "m8.id",
+          "to": "0x3c6eab22cfc03fc32ad1bf836f2f886a5015dfff",
+          "call": "marketIds(uint256)(bytes32)",
+          "args": [
+            "8"
+          ],
+          "block": 26127202,
+          "result": [
+            "0x4fa31e3f8ba345227d44e1cf48559eea53a90dd5311dc006984c060f2f311d96"
+          ]
+        },
+        {
+          "name": "m8.supply",
+          "to": "0x3c6eab22cfc03fc32ad1bf836f2f886a5015dfff",
+          "call": "expectedSupplyAssets(bytes32)(uint256)",
+          "args": [
+            "0x4fa31e3f8ba345227d44e1cf48559eea53a90dd5311dc006984c060f2f311d96"
+          ],
+          "block": 26127202,
+          "result": [
+            "8806001265769088227231494"
+          ]
+        },
+        {
+          "name": "m8.params",
+          "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+          "call": "idToMarketParams(bytes32)(address,address,address,address,uint256)",
+          "args": [
+            "0x4fa31e3f8ba345227d44e1cf48559eea53a90dd5311dc006984c060f2f311d96"
+          ],
+          "block": 26127202,
+          "result": [
+            "0x8292Bb45bf1Ee4d140127049757C2E0fF06317eD",
+            "0xCE6170EA245dC8D1f275A710a062b70f125F0110",
+            "0x5AC03061500E0C97862a466a38a7e87FAC4Ac39D",
+            "0x870aC11D48B15DB9a138Cf899d20F13F79Ba00BC",
+            "770000000000000000"
+          ]
+        },
+        {
+          "name": "m8.state",
+          "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+          "call": "market(bytes32)(uint128,uint128,uint128,uint128,uint128,uint128)",
+          "args": [
+            "0x4fa31e3f8ba345227d44e1cf48559eea53a90dd5311dc006984c060f2f311d96"
+          ],
+          "block": 26127202,
+          "result": [
+            "8805961403649357902088220",
+            "8728936235896353857581206799094",
+            "7789561644057954244871659",
+            "7713308886665095415260712429913",
+            "1791212579",
+            "0"
+          ]
+        },
+        {
+          "name": "m8.collateral",
+          "to": "0xce6170ea245dc8d1f275a710a062b70f125f0110",
+          "call": "symbol()(string)",
+          "args": [],
+          "block": 26127202,
+          "result": [
+            "FXRP"
+          ]
+        },
+        {
+          "name": "m8.rate",
+          "to": "0x870ac11d48b15db9a138cf899d20f13f79ba00bc",
+          "call": "borrowRateView((address,address,address,address,uint256),(uint128,uint128,uint128,uint128,uint128,uint128))(uint256)",
+          "args": [
+            "(0x8292Bb45bf1Ee4d140127049757C2E0fF06317eD,0xCE6170EA245dC8D1f275A710a062b70f125F0110,0x5AC03061500E0C97862a466a38a7e87FAC4Ac39D,0x870aC11D48B15DB9a138Cf899d20F13F79Ba00BC,770000000000000000)",
+            "(8805961403649357902088220,8728936235896353857581206799094,7789561644057954244871659,7713308886665095415260712429913,1791212579,0)"
+          ],
+          "block": 26127202,
+          "result": [
+            "1637600837"
+          ]
+        },
+        {
+          "name": "m9.id",
+          "to": "0x3c6eab22cfc03fc32ad1bf836f2f886a5015dfff",
+          "call": "marketIds(uint256)(bytes32)",
+          "args": [
+            "9"
+          ],
+          "block": 26127202,
+          "result": [
+            "0xd9d2fc090bdbab1804ea960dd6669b62357787e5816f575f14ca4e6d999614bf"
+          ]
+        },
+        {
+          "name": "m9.supply",
+          "to": "0x3c6eab22cfc03fc32ad1bf836f2f886a5015dfff",
+          "call": "expectedSupplyAssets(bytes32)(uint256)",
+          "args": [
+            "0xd9d2fc090bdbab1804ea960dd6669b62357787e5816f575f14ca4e6d999614bf"
+          ],
+          "block": 26127202,
+          "result": [
+            "33318142180307292344447419"
+          ]
+        },
+        {
+          "name": "m9.params",
+          "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+          "call": "idToMarketParams(bytes32)(address,address,address,address,uint256)",
+          "args": [
+            "0xd9d2fc090bdbab1804ea960dd6669b62357787e5816f575f14ca4e6d999614bf"
+          ],
+          "block": 26127202,
+          "result": [
+            "0x8292Bb45bf1Ee4d140127049757C2E0fF06317eD",
+            "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3",
+            "0x0C13eec9B02cD9D85faCC9EDF17E71FeaFC3d8D7",
+            "0x870aC11D48B15DB9a138Cf899d20F13F79Ba00BC",
+            "915000000000000000"
+          ]
+        },
+        {
+          "name": "m9.state",
+          "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+          "call": "market(bytes32)(uint128,uint128,uint128,uint128,uint128,uint128)",
+          "args": [
+            "0xd9d2fc090bdbab1804ea960dd6669b62357787e5816f575f14ca4e6d999614bf"
+          ],
+          "block": 26127202,
+          "result": [
+            "33316832289942022515818925",
+            "33284491957112692867466877081163",
+            "30141198502822744602378786",
+            "30108709854957602090703761515765",
+            "1791175871",
+            "0"
+          ]
+        },
+        {
+          "name": "m9.collateral",
+          "to": "0x4c9edd5852cd905f086c759e8383e09bff1e68b3",
+          "call": "symbol()(string)",
+          "args": [],
+          "block": 26127202,
+          "result": [
+            "USDe"
+          ]
+        },
+        {
+          "name": "m9.rate",
+          "to": "0x870ac11d48b15db9a138cf899d20f13f79ba00bc",
+          "call": "borrowRateView((address,address,address,address,uint256),(uint128,uint128,uint128,uint128,uint128,uint128))(uint256)",
+          "args": [
+            "(0x8292Bb45bf1Ee4d140127049757C2E0fF06317eD,0x4c9EDD5852cd905f086C759E8383e09bff1E68B3,0x0C13eec9B02cD9D85faCC9EDF17E71FeaFC3d8D7,0x870aC11D48B15DB9a138Cf899d20F13F79Ba00BC,915000000000000000)",
+            "(33316832289942022515818925,33284491957112692867466877081163,30141198502822744602378786,30108709854957602090703761515765,1791175871,0)"
+          ],
+          "block": 26127202,
+          "result": [
+            "1128977415"
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "id": "A.meta.name",
+          "status": "ok",
+          "kind": "rpc",
+          "value": "Sentora RLUSD Main",
+          "display": "Sentora RLUSD Main",
+          "source": {
+            "name": "name",
+            "to": "0x6dc58a0fdfc8d694e571dc59b9a52eeea780e6bf",
+            "call": "name()(string)",
+            "args": [],
+            "block": 26127202,
+            "result": [
+              "Sentora RLUSD Main"
+            ]
+          }
+        },
+        {
+          "id": "A.asset.symbol",
+          "status": "ok",
+          "kind": "rpc",
+          "value": "RLUSD",
+          "decimals": 18,
+          "display": "RLUSD",
+          "source": {
+            "name": "symbol",
+            "to": "0x8292bb45bf1ee4d140127049757c2e0ff06317ed",
+            "call": "symbol()(string)",
+            "args": [],
+            "block": 26127202,
+            "result": [
+              "RLUSD"
+            ]
+          }
+        },
+        {
+          "id": "A.apy.net",
+          "status": "ok",
+          "kind": "derived",
+          "value": "0.028330",
+          "unit": "ratio per year",
+          "display": "2.83%",
+          "formula": "min(Σ(supply_i × supplyApy_i) / totalAssets, maxRate × 31536000) × (1 − performanceFee) − managementFee × 31536000; supplyApy = (exp(borrowRate × 31536000) − 1) × utilization × (1 − marketFee); excludes rewards",
+          "inputs": [
+            "totalAssets",
+            "maxRate",
+            "performanceFee",
+            "managementFee",
+            "m0.supply",
+            "m0.state",
+            "m0.rate",
+            "m1.supply",
+            "m1.state",
+            "m1.rate",
+            "m2.supply",
+            "m2.state",
+            "m2.rate",
+            "m3.supply",
+            "m3.state",
+            "m3.rate",
+            "m4.supply",
+            "m4.state",
+            "m4.rate",
+            "m5.supply",
+            "m5.state",
+            "m5.rate",
+            "m6.supply",
+            "m6.state",
+            "m6.rate",
+            "m7.supply",
+            "m7.state",
+            "m7.rate",
+            "m8.supply",
+            "m8.state",
+            "m8.rate",
+            "m9.supply",
+            "m9.state",
+            "m9.rate"
+          ]
+        },
+        {
+          "id": "A.fees.performance",
+          "status": "ok",
+          "kind": "rpc",
+          "value": "100000000000000000",
+          "decimals": 18,
+          "unit": "WAD",
+          "display": "10.00%",
+          "source": {
+            "name": "performanceFee",
+            "to": "0x6dc58a0fdfc8d694e571dc59b9a52eeea780e6bf",
+            "call": "performanceFee()(uint96)",
+            "args": [],
+            "block": 26127202,
+            "result": [
+              "100000000000000000"
+            ]
+          }
+        },
+        {
+          "id": "A.tvl.totalAssets",
+          "status": "ok",
+          "kind": "rpc",
+          "value": "466180605698377954735469191",
+          "decimals": 18,
+          "unit": "RLUSD",
+          "display": "466,180,605.69 RLUSD",
+          "source": {
+            "name": "totalAssets",
+            "to": "0x6dc58a0fdfc8d694e571dc59b9a52eeea780e6bf",
+            "call": "totalAssets()(uint256)",
+            "args": [],
+            "block": 26127202,
+            "result": [
+              "466180605698377954735469191"
+            ]
+          }
+        },
+        {
+          "id": "A.tvl.change.30d",
+          "status": "ok",
+          "kind": "derived",
+          "value": "0.332618",
+          "unit": "ratio",
+          "display": "33.26%",
+          "formula": "totalAssets / totalAssets@30d − 1",
+          "inputs": [
+            "totalAssets",
+            "totalAssets@30d"
+          ]
+        },
+        {
+          "id": "A.liquidity.availableRatio",
+          "status": "ok",
+          "kind": "derived",
+          "value": "0.134135",
+          "unit": "ratio",
+          "display": "13.41%",
+          "formula": "(idle + min(supply_l, marketSupply_l − marketBorrow_l), l = the market in liquidityData of the liquidityAdapter (normal withdraw path: idle, then the liquidity adapter)) / totalAssets",
+          "inputs": [
+            "idle",
+            "liquidityAdapter",
+            "liquidityData",
+            "totalAssets"
+          ]
+        },
+        {
+          "id": "A.liquidity.availableNow",
+          "status": "ok",
+          "kind": "derived",
+          "value": "62531208362947541878335185",
+          "unit": "RLUSD",
+          "display": "62,531,208.36 RLUSD",
+          "formula": "idle + min(supply_l, marketSupply_l − marketBorrow_l), l = the market in liquidityData of the liquidityAdapter (normal withdraw path: idle, then the liquidity adapter)",
+          "inputs": [
+            "idle",
+            "liquidityAdapter",
+            "liquidityData"
+          ]
+        },
+        {
+          "id": "A.exposure.markets",
+          "status": "ok",
+          "kind": "derived",
+          "value": [
+            {
+              "collateralSymbol": "cbBTC",
+              "lltv": "86.00%",
+              "marketId": "0xffd010618ed3cb39bb2c5de0e3e58d3d2ec9f52187a180f29723c31756a939bc",
+              "marketLastUpdate": "1791214307",
+              "share": "2.85%",
+              "supplyApy": "3.44%",
+              "utilization": "87.64%"
+            },
+            {
+              "collateralSymbol": "weETH",
+              "lltv": "86.00%",
+              "marketId": "0xea4bfb18df0ee6bffb7b3f0270899a8adb92ab6b684709634c8276128813cfd4",
+              "marketLastUpdate": "1791039059",
+              "share": "22.96%",
+              "supplyApy": "3.76%",
+              "utilization": "88.07%"
+            },
+            {
+              "collateralSymbol": "wstETH",
+              "lltv": "86.00%",
+              "marketId": "0x88abdf8693e663144c3544b9442e9b04520016d6ebc57aa76424c00ab1683c9d",
+              "marketLastUpdate": "1790972651",
+              "share": "0.30%",
+              "supplyApy": "6.44%",
+              "utilization": "91.55%"
+            },
+            {
+              "collateralSymbol": "syrupUSDC",
+              "lltv": "91.50%",
+              "marketId": "0xc0ae375fd761ff19b3f04de5534c0f1ec110f80e1c2ede27c42c1c43c3040394",
+              "marketLastUpdate": "1791207827",
+              "share": "1.03%",
+              "supplyApy": "3.78%",
+              "utilization": "85.96%"
+            },
+            {
+              "collateralSymbol": "kBTC",
+              "lltv": "86.00%",
+              "marketId": "0x15bb2a6af0c909eed19fb1f2ceeead34ecbdcba626de752c6b09389ee14eec32",
+              "marketLastUpdate": "1791131843",
+              "share": "50.42%",
+              "supplyApy": "3.58%",
+              "utilization": "90.49%"
+            },
+            {
+              "collateralSymbol": "FXRP",
+              "lltv": "77.00%",
+              "marketId": "0x4fa31e3f8ba345227d44e1cf48559eea53a90dd5311dc006984c060f2f311d96",
+              "marketLastUpdate": "1791212579",
+              "share": "1.89%",
+              "supplyApy": "4.69%",
+              "utilization": "88.46%"
+            },
+            {
+              "collateralSymbol": "USDe",
+              "lltv": "91.50%",
+              "marketId": "0xd9d2fc090bdbab1804ea960dd6669b62357787e5816f575f14ca4e6d999614bf",
+              "marketLastUpdate": "1791175871",
+              "share": "7.15%",
+              "supplyApy": "3.28%",
+              "utilization": "90.47%"
+            },
+            {
+              "marketId": "idle",
+              "share": "13.41%"
+            }
+          ],
+          "unit": "list",
+          "display": "7 markets (3 dust omitted), idle 13.41%",
+          "formula": "per market: supply_i / totalAssets, utilization = marketBorrow / marketSupply",
+          "inputs": [
+            "totalAssets",
+            "idle",
+            "m0.id",
+            "m0.supply",
+            "m0.params",
+            "m0.state",
+            "m0.collateral",
+            "m0.rate",
+            "m1.id",
+            "m1.supply",
+            "m1.params",
+            "m1.state",
+            "m1.collateral",
+            "m1.rate",
+            "m2.id",
+            "m2.supply",
+            "m2.params",
+            "m2.state",
+            "m2.collateral",
+            "m2.rate",
+            "m3.id",
+            "m3.supply",
+            "m3.params",
+            "m3.state",
+            "m3.collateral",
+            "m3.rate",
+            "m4.id",
+            "m4.supply",
+            "m4.params",
+            "m4.state",
+            "m4.collateral",
+            "m4.rate",
+            "m5.id",
+            "m5.supply",
+            "m5.params",
+            "m5.state",
+            "m5.collateral",
+            "m5.rate",
+            "m6.id",
+            "m6.supply",
+            "m6.params",
+            "m6.state",
+            "m6.collateral",
+            "m6.rate",
+            "m7.id",
+            "m7.supply",
+            "m7.params",
+            "m7.state",
+            "m7.collateral",
+            "m7.rate",
+            "m8.id",
+            "m8.supply",
+            "m8.params",
+            "m8.state",
+            "m8.collateral",
+            "m8.rate",
+            "m9.id",
+            "m9.supply",
+            "m9.params",
+            "m9.state",
+            "m9.collateral",
+            "m9.rate"
+          ]
+        },
+        {
+          "id": "A.exposure.topMarketShare",
+          "status": "ok",
+          "kind": "derived",
+          "value": "0.504178",
+          "unit": "ratio",
+          "display": "50.42%",
+          "formula": "max(supply_i / totalAssets)",
+          "inputs": [
+            "totalAssets",
+            "m0.supply",
+            "m1.supply",
+            "m2.supply",
+            "m3.supply",
+            "m4.supply",
+            "m5.supply",
+            "m6.supply",
+            "m7.supply",
+            "m8.supply",
+            "m9.supply"
+          ]
+        },
+        {
+          "id": "A.perf.realized.30d",
+          "status": "ok",
+          "kind": "derived",
+          "value": "0.028538",
+          "unit": "ratio per year",
+          "display": "2.85%",
+          "formula": "(sharePrice / sharePrice@30d)^(31536000 / 2603592) − 1; elapsed = block timestamp − blocks.30d timestamp",
+          "inputs": [
+            "sharePrice",
+            "sharePrice@30d",
+            "totalAssets@30d"
+          ]
+        },
+        {
+          "id": "A.perf.realized.90d",
+          "status": "ok",
+          "kind": "derived",
+          "value": "0.027463",
+          "unit": "ratio per year",
+          "display": "2.75%",
+          "formula": "(sharePrice / sharePrice@90d)^(31536000 / 7806144) − 1; elapsed = block timestamp − blocks.90d timestamp",
+          "inputs": [
+            "sharePrice",
+            "sharePrice@90d",
+            "totalAssets@90d"
+          ]
+        }
+      ]
+    },
+    "B": {
+      "address": "0xbeef088055857739c12cd3765f20b7679def0f51",
+      "reads": [
+        {
+          "name": "name",
+          "to": "0xbeef088055857739c12cd3765f20b7679def0f51",
+          "call": "name()(string)",
+          "args": [],
+          "block": 26127202,
+          "result": [
+            "Steakhouse Prime USDC"
+          ]
+        },
+        {
+          "name": "asset",
+          "to": "0xbeef088055857739c12cd3765f20b7679def0f51",
+          "call": "asset()(address)",
+          "args": [],
+          "block": 26127202,
+          "result": [
+            "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
+          ]
+        },
+        {
+          "name": "totalAssets",
+          "to": "0xbeef088055857739c12cd3765f20b7679def0f51",
+          "call": "totalAssets()(uint256)",
+          "args": [],
+          "block": 26127202,
+          "result": [
+            "108190806867870"
+          ]
+        },
+        {
+          "name": "performanceFee",
+          "to": "0xbeef088055857739c12cd3765f20b7679def0f51",
+          "call": "performanceFee()(uint96)",
+          "args": [],
+          "block": 26127202,
+          "result": [
+            "0"
+          ]
+        },
+        {
+          "name": "managementFee",
+          "to": "0xbeef088055857739c12cd3765f20b7679def0f51",
+          "call": "managementFee()(uint96)",
+          "args": [],
+          "block": 26127202,
+          "result": [
+            "0"
+          ]
+        },
+        {
+          "name": "maxRate",
+          "to": "0xbeef088055857739c12cd3765f20b7679def0f51",
+          "call": "maxRate()(uint64)",
+          "args": [],
+          "block": 26127202,
+          "result": [
+            "63419583967"
+          ]
+        },
+        {
+          "name": "liquidityAdapter",
+          "to": "0xbeef088055857739c12cd3765f20b7679def0f51",
+          "call": "liquidityAdapter()(address)",
+          "args": [],
+          "block": 26127202,
+          "result": [
+            "0x2b9681015A1FA2225D1FC8ae40538d3D64C58290"
+          ]
+        },
+        {
+          "name": "liquidityData",
+          "to": "0xbeef088055857739c12cd3765f20b7679def0f51",
+          "call": "liquidityData()(bytes)",
+          "args": [],
+          "block": 26127202,
+          "result": [
+            "0x000000000000000000000000a0b86991c6218b36c1d19d4a2e9eb0ce3606eb48000000000000000000000000cbb7c0000ab88b473b1f5afd9ef808440eed33bf000000000000000000000000a6d6950c9f177f1de7f7757fb33539e3ec60182a000000000000000000000000870ac11d48b15db9a138cf899d20f13f79ba00bc0000000000000000000000000000000000000000000000000bef55718ad60000"
+          ]
+        },
+        {
+          "name": "shareDecimals",
+          "to": "0xbeef088055857739c12cd3765f20b7679def0f51",
+          "call": "decimals()(uint8)",
+          "args": [],
+          "block": 26127202,
+          "result": [
+            "18"
+          ]
+        },
+        {
+          "name": "decimals",
+          "to": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "call": "decimals()(uint8)",
+          "args": [],
+          "block": 26127202,
+          "result": [
+            "6"
+          ]
+        },
+        {
+          "name": "symbol",
+          "to": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "call": "symbol()(string)",
+          "args": [],
+          "block": 26127202,
+          "result": [
+            "USDC"
+          ]
+        },
+        {
+          "name": "idle",
+          "to": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "call": "balanceOf(address)(uint256)",
+          "args": [
+            "0xbeef088055857739C12CD3765F20b7679Def0f51"
+          ],
+          "block": 26127202,
+          "result": [
+            "0"
+          ]
+        },
+        {
+          "name": "sharePrice",
+          "to": "0xbeef088055857739c12cd3765f20b7679def0f51",
+          "call": "convertToAssets(uint256)(uint256)",
+          "args": [
+            "1000000000000000000000000000000"
+          ],
+          "block": 26127202,
+          "result": [
+            "1034436044812682323"
+          ]
+        },
+        {
+          "name": "sharePrice@30d",
+          "to": "0xbeef088055857739c12cd3765f20b7679def0f51",
+          "call": "convertToAssets(uint256)(uint256)",
+          "args": [
+            "1000000000000000000000000000000"
+          ],
+          "block": 25911202,
+          "result": [
+            "1030741534886446081"
+          ]
+        },
+        {
+          "name": "totalAssets@30d",
+          "to": "0xbeef088055857739c12cd3765f20b7679def0f51",
+          "call": "totalAssets()(uint256)",
+          "args": [],
+          "block": 25911202,
+          "result": [
+            "94082348238679"
+          ]
+        },
+        {
+          "name": "sharePrice@90d",
+          "to": "0xbeef088055857739c12cd3765f20b7679def0f51",
+          "call": "convertToAssets(uint256)(uint256)",
+          "args": [
+            "1000000000000000000000000000000"
+          ],
+          "block": 25479202,
+          "result": [
+            "1024259091347335526"
+          ]
+        },
+        {
+          "name": "totalAssets@90d",
+          "to": "0xbeef088055857739c12cd3765f20b7679def0f51",
+          "call": "totalAssets()(uint256)",
+          "args": [],
+          "block": 25479202,
+          "result": [
+            "56382375090533"
+          ]
+        },
+        {
+          "name": "adaptersLength",
+          "to": "0xbeef088055857739c12cd3765f20b7679def0f51",
+          "call": "adaptersLength()(uint256)",
+          "args": [],
+          "block": 26127202,
+          "result": [
+            "1"
+          ]
+        },
+        {
+          "name": "adapter0",
+          "to": "0xbeef088055857739c12cd3765f20b7679def0f51",
+          "call": "adapters(uint256)(address)",
+          "args": [
+            "0"
+          ],
+          "block": 26127202,
+          "result": [
+            "0x2b9681015A1FA2225D1FC8ae40538d3D64C58290"
+          ]
+        },
+        {
+          "name": "adapter0.morpho",
+          "to": "0x2b9681015a1fa2225d1fc8ae40538d3d64c58290",
+          "call": "morpho()(address)",
+          "args": [],
+          "block": 26127202,
+          "result": [
+            "0xBBBBBbbBBb9cC5e90e3b3Af64bdAF62C37EEFFCb"
+          ]
+        },
+        {
+          "name": "adapter0.marketIdsLength",
+          "to": "0x2b9681015a1fa2225d1fc8ae40538d3d64c58290",
+          "call": "marketIdsLength()(uint256)",
+          "args": [],
+          "block": 26127202,
+          "result": [
+            "9"
+          ]
+        },
+        {
+          "name": "m0.id",
+          "to": "0x2b9681015a1fa2225d1fc8ae40538d3d64c58290",
+          "call": "marketIds(uint256)(bytes32)",
+          "args": [
+            "0"
+          ],
+          "block": 26127202,
+          "result": [
+            "0x85252bb8485c99bba46fe149c7dd2aad83672640f53c630890673cf1848ba16e"
+          ]
+        },
+        {
+          "name": "m0.supply",
+          "to": "0x2b9681015a1fa2225d1fc8ae40538d3d64c58290",
+          "call": "expectedSupplyAssets(bytes32)(uint256)",
+          "args": [
+            "0x85252bb8485c99bba46fe149c7dd2aad83672640f53c630890673cf1848ba16e"
+          ],
+          "block": 26127202,
+          "result": [
+            "20161938527920"
+          ]
+        },
+        {
+          "name": "m0.params",
+          "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+          "call": "idToMarketParams(bytes32)(address,address,address,address,uint256)",
+          "args": [
+            "0x85252bb8485c99bba46fe149c7dd2aad83672640f53c630890673cf1848ba16e"
+          ],
+          "block": 26127202,
+          "result": [
+            "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+            "0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee",
+            "0xa3A7A3ceFee206f9d7Fe00eC3C83324ED4228411",
+            "0x870aC11D48B15DB9a138Cf899d20F13F79Ba00BC",
+            "860000000000000000"
+          ]
+        },
+        {
+          "name": "m0.state",
+          "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+          "call": "market(bytes32)(uint128,uint128,uint128,uint128,uint128,uint128)",
+          "args": [
+            "0x85252bb8485c99bba46fe149c7dd2aad83672640f53c630890673cf1848ba16e"
+          ],
+          "block": 26127202,
+          "result": [
+            "35769387009465",
+            "34815508362588875676",
+            "32040071874170",
+            "31067744859941359704",
+            "1791214391",
+            "0"
+          ]
+        },
+        {
+          "name": "m0.collateral",
+          "to": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+          "call": "symbol()(string)",
+          "args": [],
+          "block": 26127202,
+          "result": [
+            "weETH"
+          ]
+        },
+        {
+          "name": "m0.rate",
+          "to": "0x870ac11d48b15db9a138cf899d20f13f79ba00bc",
+          "call": "borrowRateView((address,address,address,address,uint256),(uint128,uint128,uint128,uint128,uint128,uint128))(uint256)",
+          "args": [
+            "(0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48,0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee,0xa3A7A3ceFee206f9d7Fe00eC3C83324ED4228411,0x870aC11D48B15DB9a138Cf899d20F13F79Ba00BC,860000000000000000)",
+            "(35769387009465,34815508362588875676,32040071874170,31067744859941359704,1791214391,0)"
+          ],
+          "block": 26127202,
+          "result": [
+            "1506736661"
+          ]
+        },
+        {
+          "name": "m1.id",
+          "to": "0x2b9681015a1fa2225d1fc8ae40538d3d64c58290",
+          "call": "marketIds(uint256)(bytes32)",
+          "args": [
+            "1"
+          ],
+          "block": 26127202,
+          "result": [
+            "0x64d65c9a2d91c36d56fbc42d69e979335320169b3df63bf92789e2c8883fcc64"
+          ]
+        },
+        {
+          "name": "m1.supply",
+          "to": "0x2b9681015a1fa2225d1fc8ae40538d3d64c58290",
+          "call": "expectedSupplyAssets(bytes32)(uint256)",
+          "args": [
+            "0x64d65c9a2d91c36d56fbc42d69e979335320169b3df63bf92789e2c8883fcc64"
+          ],
+          "block": 26127202,
+          "result": [
+            "60542498124704"
+          ]
+        },
+        {
+          "name": "m1.params",
+          "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+          "call": "idToMarketParams(bytes32)(address,address,address,address,uint256)",
+          "args": [
+            "0x64d65c9a2d91c36d56fbc42d69e979335320169b3df63bf92789e2c8883fcc64"
+          ],
+          "block": 26127202,
+          "result": [
+            "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+            "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+            "0xA6D6950c9F177F1De7f7757FB33539e3Ec60182a",
+            "0x870aC11D48B15DB9a138Cf899d20F13F79Ba00BC",
+            "860000000000000000"
+          ]
+        },
+        {
+          "name": "m1.state",
+          "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+          "call": "market(bytes32)(uint128,uint128,uint128,uint128,uint128,uint128)",
+          "args": [
+            "0x64d65c9a2d91c36d56fbc42d69e979335320169b3df63bf92789e2c8883fcc64"
+          ],
+          "block": 26127202,
+          "result": [
+            "339884032862878",
+            "310464056251594731086",
+            "303381836995105",
+            "273734553963270328991",
+            "1791214751",
+            "0"
+          ]
+        },
+        {
+          "name": "m1.collateral",
+          "to": "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
+          "call": "symbol()(string)",
+          "args": [],
+          "block": 26127202,
+          "result": [
+            "cbBTC"
+          ]
+        },
+        {
+          "name": "m1.rate",
+          "to": "0x870ac11d48b15db9a138cf899d20f13f79ba00bc",
+          "call": "borrowRateView((address,address,address,address,uint256),(uint128,uint128,uint128,uint128,uint128,uint128))(uint256)",
+          "args": [
+            "(0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48,0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf,0xA6D6950c9F177F1De7f7757FB33539e3Ec60182a,0x870aC11D48B15DB9a138Cf899d20F13F79Ba00BC,860000000000000000)",
+            "(339884032862878,310464056251594731086,303381836995105,273734553963270328991,1791214751,0)"
+          ],
+          "block": 26127202,
+          "result": [
+            "1471830039"
+          ]
+        },
+        {
+          "name": "m2.id",
+          "to": "0x2b9681015a1fa2225d1fc8ae40538d3d64c58290",
+          "call": "marketIds(uint256)(bytes32)",
+          "args": [
+            "2"
+          ],
+          "block": 26127202,
+          "result": [
+            "0x7e585a933ffe8443c371b4f8cfeb4430f5f6a14c2f32a898c26662c67a1cb8b8"
+          ]
+        },
+        {
+          "name": "m2.supply",
+          "to": "0x2b9681015a1fa2225d1fc8ae40538d3d64c58290",
+          "call": "expectedSupplyAssets(bytes32)(uint256)",
+          "args": [
+            "0x7e585a933ffe8443c371b4f8cfeb4430f5f6a14c2f32a898c26662c67a1cb8b8"
+          ],
+          "block": 26127202,
+          "result": [
+            "6188699346584"
+          ]
+        },
+        {
+          "name": "m2.params",
+          "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+          "call": "idToMarketParams(bytes32)(address,address,address,address,uint256)",
+          "args": [
+            "0x7e585a933ffe8443c371b4f8cfeb4430f5f6a14c2f32a898c26662c67a1cb8b8"
+          ],
+          "block": 26127202,
+          "result": [
+            "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+            "0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0",
+            "0xe087AD7FE989cF63F8383579D160a20Ee7e69F9F",
+            "0x870aC11D48B15DB9a138Cf899d20F13F79Ba00BC",
+            "860000000000000000"
+          ]
+        },
+        {
+          "name": "m2.state",
+          "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+          "call": "market(bytes32)(uint128,uint128,uint128,uint128,uint128,uint128)",
+          "args": [
+            "0x7e585a933ffe8443c371b4f8cfeb4430f5f6a14c2f32a898c26662c67a1cb8b8"
+          ],
+          "block": 26127202,
+          "result": [
+            "12808971624767",
+            "12576590286706060601",
+            "11521783808753",
+            "11287485113732548692",
+            "1791214391",
+            "0"
+          ]
+        },
+        {
+          "name": "m2.collateral",
+          "to": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+          "call": "symbol()(string)",
+          "args": [],
+          "block": 26127202,
+          "result": [
+            "wstETH"
+          ]
+        },
+        {
+          "name": "m2.rate",
+          "to": "0x870ac11d48b15db9a138cf899d20f13f79ba00bc",
+          "call": "borrowRateView((address,address,address,address,uint256),(uint128,uint128,uint128,uint128,uint128,uint128))(uint256)",
+          "args": [
+            "(0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48,0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0,0xe087AD7FE989cF63F8383579D160a20Ee7e69F9F,0x870aC11D48B15DB9a138Cf899d20F13F79Ba00BC,860000000000000000)",
+            "(12808971624767,12576590286706060601,11521783808753,11287485113732548692,1791214391,0)"
+          ],
+          "block": 26127202,
+          "result": [
+            "1501298735"
+          ]
+        },
+        {
+          "name": "m3.id",
+          "to": "0x2b9681015a1fa2225d1fc8ae40538d3d64c58290",
+          "call": "marketIds(uint256)(bytes32)",
+          "args": [
+            "3"
+          ],
+          "block": 26127202,
+          "result": [
+            "0x09dc9e7eb5d8fc54b2bc41d1135fd4e99057a580f680321faeb90c7a21e631c1"
+          ]
+        },
+        {
+          "name": "m3.supply",
+          "to": "0x2b9681015a1fa2225d1fc8ae40538d3d64c58290",
+          "call": "expectedSupplyAssets(bytes32)(uint256)",
+          "args": [
+            "0x09dc9e7eb5d8fc54b2bc41d1135fd4e99057a580f680321faeb90c7a21e631c1"
+          ],
+          "block": 26127202,
+          "result": [
+            "981933613899"
+          ]
+        },
+        {
+          "name": "m3.params",
+          "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+          "call": "idToMarketParams(bytes32)(address,address,address,address,uint256)",
+          "args": [
+            "0x09dc9e7eb5d8fc54b2bc41d1135fd4e99057a580f680321faeb90c7a21e631c1"
+          ],
+          "block": 26127202,
+          "result": [
+            "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+            "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+            "0xf1561bC4b3D1bA49053986Fb9ee88D4fE22d0Cf4",
+            "0x870aC11D48B15DB9a138Cf899d20F13F79Ba00BC",
+            "860000000000000000"
+          ]
+        },
+        {
+          "name": "m3.state",
+          "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+          "call": "market(bytes32)(uint128,uint128,uint128,uint128,uint128,uint128)",
+          "args": [
+            "0x09dc9e7eb5d8fc54b2bc41d1135fd4e99057a580f680321faeb90c7a21e631c1"
+          ],
+          "block": 26127202,
+          "result": [
+            "1520930986113",
+            "1494164805897464023",
+            "1353098163815",
+            "1326435513301980890",
+            "1791214391",
+            "0"
+          ]
+        },
+        {
+          "name": "m3.collateral",
+          "to": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+          "call": "symbol()(string)",
+          "args": [],
+          "block": 26127202,
+          "result": [
+            "WBTC"
+          ]
+        },
+        {
+          "name": "m3.rate",
+          "to": "0x870ac11d48b15db9a138cf899d20f13f79ba00bc",
+          "call": "borrowRateView((address,address,address,address,uint256),(uint128,uint128,uint128,uint128,uint128,uint128))(uint256)",
+          "args": [
+            "(0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48,0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599,0xf1561bC4b3D1bA49053986Fb9ee88D4fE22d0Cf4,0x870aC11D48B15DB9a138Cf899d20F13F79Ba00BC,860000000000000000)",
+            "(1520930986113,1494164805897464023,1353098163815,1326435513301980890,1791214391,0)"
+          ],
+          "block": 26127202,
+          "result": [
+            "1481374096"
+          ]
+        },
+        {
+          "name": "m4.id",
+          "to": "0x2b9681015a1fa2225d1fc8ae40538d3d64c58290",
+          "call": "marketIds(uint256)(bytes32)",
+          "args": [
+            "4"
+          ],
+          "block": 26127202,
+          "result": [
+            "0x34377fc4f617c51818e92c79df31ff270c6a91bc94ad32e367fdf59b9f4ac5dd"
+          ]
+        },
+        {
+          "name": "m4.supply",
+          "to": "0x2b9681015a1fa2225d1fc8ae40538d3d64c58290",
+          "call": "expectedSupplyAssets(bytes32)(uint256)",
+          "args": [
+            "0x34377fc4f617c51818e92c79df31ff270c6a91bc94ad32e367fdf59b9f4ac5dd"
+          ],
+          "block": 26127202,
+          "result": [
+            "301892030950"
+          ]
+        },
+        {
+          "name": "m4.params",
+          "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+          "call": "idToMarketParams(bytes32)(address,address,address,address,uint256)",
+          "args": [
+            "0x34377fc4f617c51818e92c79df31ff270c6a91bc94ad32e367fdf59b9f4ac5dd"
+          ],
+          "block": 26127202,
+          "result": [
+            "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+            "0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee",
+            "0xa3A7A3ceFee206f9d7Fe00eC3C83324ED4228411",
+            "0x870aC11D48B15DB9a138Cf899d20F13F79Ba00BC",
+            "770000000000000000"
+          ]
+        },
+        {
+          "name": "m4.state",
+          "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+          "call": "market(bytes32)(uint128,uint128,uint128,uint128,uint128,uint128)",
+          "args": [
+            "0x34377fc4f617c51818e92c79df31ff270c6a91bc94ad32e367fdf59b9f4ac5dd"
+          ],
+          "block": 26127202,
+          "result": [
+            "479156831271",
+            "470946876938201615",
+            "434845366267",
+            "426415321924169519",
+            "1791214391",
+            "0"
+          ]
+        },
+        {
+          "name": "m4.collateral",
+          "to": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+          "call": "symbol()(string)",
+          "args": [],
+          "block": 26127202,
+          "result": [
+            "weETH"
+          ]
+        },
+        {
+          "name": "m4.rate",
+          "to": "0x870ac11d48b15db9a138cf899d20f13f79ba00bc",
+          "call": "borrowRateView((address,address,address,address,uint256),(uint128,uint128,uint128,uint128,uint128,uint128))(uint256)",
+          "args": [
+            "(0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48,0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee,0xa3A7A3ceFee206f9d7Fe00eC3C83324ED4228411,0x870aC11D48B15DB9a138Cf899d20F13F79Ba00BC,770000000000000000)",
+            "(479156831271,470946876938201615,434845366267,426415321924169519,1791214391,0)"
+          ],
+          "block": 26127202,
+          "result": [
+            "1452884283"
+          ]
+        },
+        {
+          "name": "m5.id",
+          "to": "0x2b9681015a1fa2225d1fc8ae40538d3d64c58290",
+          "call": "marketIds(uint256)(bytes32)",
+          "args": [
+            "5"
+          ],
+          "block": 26127202,
+          "result": [
+            "0x94b823e6bd8ea533b4e33fbc307faea0b307301bc48763acc4d4aa4def7636cd"
+          ]
+        },
+        {
+          "name": "m5.supply",
+          "to": "0x2b9681015a1fa2225d1fc8ae40538d3d64c58290",
+          "call": "expectedSupplyAssets(bytes32)(uint256)",
+          "args": [
+            "0x94b823e6bd8ea533b4e33fbc307faea0b307301bc48763acc4d4aa4def7636cd"
+          ],
+          "block": 26127202,
+          "result": [
+            "2558725469067"
+          ]
+        },
+        {
+          "name": "m5.params",
+          "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+          "call": "idToMarketParams(bytes32)(address,address,address,address,uint256)",
+          "args": [
+            "0x94b823e6bd8ea533b4e33fbc307faea0b307301bc48763acc4d4aa4def7636cd"
+          ],
+          "block": 26127202,
+          "result": [
+            "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+            "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+            "0x0F948CBa8231Db7898ef36A4212581Ad7b1B4580",
+            "0x870aC11D48B15DB9a138Cf899d20F13F79Ba00BC",
+            "860000000000000000"
+          ]
+        },
+        {
+          "name": "m5.state",
+          "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+          "call": "market(bytes32)(uint128,uint128,uint128,uint128,uint128,uint128)",
+          "args": [
+            "0x94b823e6bd8ea533b4e33fbc307faea0b307301bc48763acc4d4aa4def7636cd"
+          ],
+          "block": 26127202,
+          "result": [
+            "9593558129630",
+            "9300838878418057310",
+            "8459936593613",
+            "8167402610148801634",
+            "1791214391",
+            "0"
+          ]
+        },
+        {
+          "name": "m5.collateral",
+          "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "call": "symbol()(string)",
+          "args": [],
+          "block": 26127202,
+          "result": [
+            "WETH"
+          ]
+        },
+        {
+          "name": "m5.rate",
+          "to": "0x870ac11d48b15db9a138cf899d20f13f79ba00bc",
+          "call": "borrowRateView((address,address,address,address,uint256),(uint128,uint128,uint128,uint128,uint128,uint128))(uint256)",
+          "args": [
+            "(0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48,0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2,0x0F948CBa8231Db7898ef36A4212581Ad7b1B4580,0x870aC11D48B15DB9a138Cf899d20F13F79Ba00BC,860000000000000000)",
+            "(9593558129630,9300838878418057310,8459936593613,8167402610148801634,1791214391,0)"
+          ],
+          "block": 26127202,
+          "result": [
+            "1494173850"
+          ]
+        },
+        {
+          "name": "m6.id",
+          "to": "0x2b9681015a1fa2225d1fc8ae40538d3d64c58290",
+          "call": "marketIds(uint256)(bytes32)",
+          "args": [
+            "6"
+          ],
+          "block": 26127202,
+          "result": [
+            "0xb323495f7e4148be5643a4ea4a8221eef163e4bccfdedc2a6f4696baacbc86cc"
+          ]
+        },
+        {
+          "name": "m6.supply",
+          "to": "0x2b9681015a1fa2225d1fc8ae40538d3d64c58290",
+          "call": "expectedSupplyAssets(bytes32)(uint256)",
+          "args": [
+            "0xb323495f7e4148be5643a4ea4a8221eef163e4bccfdedc2a6f4696baacbc86cc"
+          ],
+          "block": 26127202,
+          "result": [
+            "3338992974197"
+          ]
+        },
+        {
+          "name": "m6.params",
+          "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+          "call": "idToMarketParams(bytes32)(address,address,address,address,uint256)",
+          "args": [
+            "0xb323495f7e4148be5643a4ea4a8221eef163e4bccfdedc2a6f4696baacbc86cc"
+          ],
+          "block": 26127202,
+          "result": [
+            "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+            "0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0",
+            "0x48F7E36EB6B826B2dF4B2E630B62Cd25e89E40e2",
+            "0x870aC11D48B15DB9a138Cf899d20F13F79Ba00BC",
+            "860000000000000000"
+          ]
+        },
+        {
+          "name": "m6.state",
+          "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+          "call": "market(bytes32)(uint128,uint128,uint128,uint128,uint128,uint128)",
+          "args": [
+            "0xb323495f7e4148be5643a4ea4a8221eef163e4bccfdedc2a6f4696baacbc86cc"
+          ],
+          "block": 26127202,
+          "result": [
+            "32739590658301",
+            "28563940318304074659",
+            "29323558697639",
+            "25091810670306191789",
+            "1791214391",
+            "0"
+          ]
+        },
+        {
+          "name": "m6.collateral",
+          "to": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+          "call": "symbol()(string)",
+          "args": [],
+          "block": 26127202,
+          "result": [
+            "wstETH"
+          ]
+        },
+        {
+          "name": "m6.rate",
+          "to": "0x870ac11d48b15db9a138cf899d20f13f79ba00bc",
+          "call": "borrowRateView((address,address,address,address,uint256),(uint128,uint128,uint128,uint128,uint128,uint128))(uint256)",
+          "args": [
+            "(0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48,0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0,0x48F7E36EB6B826B2dF4B2E630B62Cd25e89E40e2,0x870aC11D48B15DB9a138Cf899d20F13F79Ba00BC,860000000000000000)",
+            "(32739590658301,28563940318304074659,29323558697639,25091810670306191789,1791214391,0)"
+          ],
+          "block": 26127202,
+          "result": [
+            "1471449410"
+          ]
+        },
+        {
+          "name": "m7.id",
+          "to": "0x2b9681015a1fa2225d1fc8ae40538d3d64c58290",
+          "call": "marketIds(uint256)(bytes32)",
+          "args": [
+            "7"
+          ],
+          "block": 26127202,
+          "result": [
+            "0x3a85e619751152991742810df6ec69ce473daef99e28a64ab2340d7b7ccfee49"
+          ]
+        },
+        {
+          "name": "m7.supply",
+          "to": "0x2b9681015a1fa2225d1fc8ae40538d3d64c58290",
+          "call": "expectedSupplyAssets(bytes32)(uint256)",
+          "args": [
+            "0x3a85e619751152991742810df6ec69ce473daef99e28a64ab2340d7b7ccfee49"
+          ],
+          "block": 26127202,
+          "result": [
+            "14095825199535"
+          ]
+        },
+        {
+          "name": "m7.params",
+          "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+          "call": "idToMarketParams(bytes32)(address,address,address,address,uint256)",
+          "args": [
+            "0x3a85e619751152991742810df6ec69ce473daef99e28a64ab2340d7b7ccfee49"
+          ],
+          "block": 26127202,
+          "result": [
+            "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+            "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+            "0xDddd770BADd886dF3864029e4B377B5F6a2B6b83",
+            "0x870aC11D48B15DB9a138Cf899d20F13F79Ba00BC",
+            "860000000000000000"
+          ]
+        },
+        {
+          "name": "m7.state",
+          "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+          "call": "market(bytes32)(uint128,uint128,uint128,uint128,uint128,uint128)",
+          "args": [
+            "0x3a85e619751152991742810df6ec69ce473daef99e28a64ab2340d7b7ccfee49"
+          ],
+          "block": 26127202,
+          "result": [
+            "130854782983516",
+            "114215371919254248048",
+            "115869641980666",
+            "99217111945074588449",
+            "1791214391",
+            "0"
+          ]
+        },
+        {
+          "name": "m7.collateral",
+          "to": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+          "call": "symbol()(string)",
+          "args": [],
+          "block": 26127202,
+          "result": [
+            "WBTC"
+          ]
+        },
+        {
+          "name": "m7.rate",
+          "to": "0x870ac11d48b15db9a138cf899d20f13f79ba00bc",
+          "call": "borrowRateView((address,address,address,address,uint256),(uint128,uint128,uint128,uint128,uint128,uint128))(uint256)",
+          "args": [
+            "(0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48,0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599,0xDddd770BADd886dF3864029e4B377B5F6a2B6b83,0x870aC11D48B15DB9a138Cf899d20F13F79Ba00BC,860000000000000000)",
+            "(130854782983516,114215371919254248048,115869641980666,99217111945074588449,1791214391,0)"
+          ],
+          "block": 26127202,
+          "result": [
+            "1488496438"
+          ]
+        },
+        {
+          "name": "m8.id",
+          "to": "0x2b9681015a1fa2225d1fc8ae40538d3d64c58290",
+          "call": "marketIds(uint256)(bytes32)",
+          "args": [
+            "8"
+          ],
+          "block": 26127202,
+          "result": [
+            "0xbc99de6a88904cd0e69042ad6f266e63182801f030c636507c3caf590ffd84fe"
+          ]
+        },
+        {
+          "name": "m8.supply",
+          "to": "0x2b9681015a1fa2225d1fc8ae40538d3d64c58290",
+          "call": "expectedSupplyAssets(bytes32)(uint256)",
+          "args": [
+            "0xbc99de6a88904cd0e69042ad6f266e63182801f030c636507c3caf590ffd84fe"
+          ],
+          "block": 26127202,
+          "result": [
+            "20301581014"
+          ]
+        },
+        {
+          "name": "m8.params",
+          "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+          "call": "idToMarketParams(bytes32)(address,address,address,address,uint256)",
+          "args": [
+            "0xbc99de6a88904cd0e69042ad6f266e63182801f030c636507c3caf590ffd84fe"
+          ],
+          "block": 26127202,
+          "result": [
+            "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+            "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+            "0x9F983115741D0F7F2EAE07831415057AD3de34d2",
+            "0x870aC11D48B15DB9a138Cf899d20F13F79Ba00BC",
+            "860000000000000000"
+          ]
+        },
+        {
+          "name": "m8.state",
+          "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+          "call": "market(bytes32)(uint128,uint128,uint128,uint128,uint128,uint128)",
+          "args": [
+            "0xbc99de6a88904cd0e69042ad6f266e63182801f030c636507c3caf590ffd84fe"
+          ],
+          "block": 26127202,
+          "result": [
+            "908346823779",
+            "892527194884334979",
+            "821907035415",
+            "805743973676393562",
+            "1791212951",
+            "0"
+          ]
+        },
+        {
+          "name": "m8.collateral",
+          "to": "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
+          "call": "symbol()(string)",
+          "args": [],
+          "block": 26127202,
+          "result": [
+            "cbBTC"
+          ]
+        },
+        {
+          "name": "m8.rate",
+          "to": "0x870ac11d48b15db9a138cf899d20f13f79ba00bc",
+          "call": "borrowRateView((address,address,address,address,uint256),(uint128,uint128,uint128,uint128,uint128,uint128))(uint256)",
+          "args": [
+            "(0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48,0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf,0x9F983115741D0F7F2EAE07831415057AD3de34d2,0x870aC11D48B15DB9a138Cf899d20F13F79Ba00BC,860000000000000000)",
+            "(908346823779,892527194884334979,821907035415,805743973676393562,1791212951,0)"
+          ],
+          "block": 26127202,
+          "result": [
+            "1444963333"
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "id": "B.meta.name",
+          "status": "ok",
+          "kind": "rpc",
+          "value": "Steakhouse Prime USDC",
+          "display": "Steakhouse Prime USDC",
+          "source": {
+            "name": "name",
+            "to": "0xbeef088055857739c12cd3765f20b7679def0f51",
+            "call": "name()(string)",
+            "args": [],
+            "block": 26127202,
+            "result": [
+              "Steakhouse Prime USDC"
+            ]
+          }
+        },
+        {
+          "id": "B.asset.symbol",
+          "status": "ok",
+          "kind": "rpc",
+          "value": "USDC",
+          "decimals": 6,
+          "display": "USDC",
+          "source": {
+            "name": "symbol",
+            "to": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+            "call": "symbol()(string)",
+            "args": [],
+            "block": 26127202,
+            "result": [
+              "USDC"
+            ]
+          }
+        },
+        {
+          "id": "B.apy.net",
+          "status": "ok",
+          "kind": "derived",
+          "value": "0.042725",
+          "unit": "ratio per year",
+          "display": "4.27%",
+          "formula": "min(Σ(supply_i × supplyApy_i) / totalAssets, maxRate × 31536000) × (1 − performanceFee) − managementFee × 31536000; supplyApy = (exp(borrowRate × 31536000) − 1) × utilization × (1 − marketFee); excludes rewards",
+          "inputs": [
+            "totalAssets",
+            "maxRate",
+            "performanceFee",
+            "managementFee",
+            "m0.supply",
+            "m0.state",
+            "m0.rate",
+            "m1.supply",
+            "m1.state",
+            "m1.rate",
+            "m2.supply",
+            "m2.state",
+            "m2.rate",
+            "m3.supply",
+            "m3.state",
+            "m3.rate",
+            "m4.supply",
+            "m4.state",
+            "m4.rate",
+            "m5.supply",
+            "m5.state",
+            "m5.rate",
+            "m6.supply",
+            "m6.state",
+            "m6.rate",
+            "m7.supply",
+            "m7.state",
+            "m7.rate",
+            "m8.supply",
+            "m8.state",
+            "m8.rate"
+          ]
+        },
+        {
+          "id": "B.fees.performance",
+          "status": "ok",
+          "kind": "rpc",
+          "value": "0",
+          "decimals": 18,
+          "unit": "WAD",
+          "display": "0.00%",
+          "source": {
+            "name": "performanceFee",
+            "to": "0xbeef088055857739c12cd3765f20b7679def0f51",
+            "call": "performanceFee()(uint96)",
+            "args": [],
+            "block": 26127202,
+            "result": [
+              "0"
+            ]
+          }
+        },
+        {
+          "id": "B.tvl.totalAssets",
+          "status": "ok",
+          "kind": "rpc",
+          "value": "108190806867870",
+          "decimals": 6,
+          "unit": "USDC",
+          "display": "108,190,806.86 USDC",
+          "source": {
+            "name": "totalAssets",
+            "to": "0xbeef088055857739c12cd3765f20b7679def0f51",
+            "call": "totalAssets()(uint256)",
+            "args": [],
+            "block": 26127202,
+            "result": [
+              "108190806867870"
+            ]
+          }
+        },
+        {
+          "id": "B.tvl.change.30d",
+          "status": "ok",
+          "kind": "derived",
+          "value": "0.149959",
+          "unit": "ratio",
+          "display": "15.00%",
+          "formula": "totalAssets / totalAssets@30d − 1",
+          "inputs": [
+            "totalAssets",
+            "totalAssets@30d"
+          ]
+        },
+        {
+          "id": "B.liquidity.availableRatio",
+          "status": "ok",
+          "kind": "derived",
+          "value": "0.337387",
+          "unit": "ratio",
+          "display": "33.74%",
+          "formula": "(idle + min(supply_l, marketSupply_l − marketBorrow_l), l = the market in liquidityData of the liquidityAdapter (normal withdraw path: idle, then the liquidity adapter)) / totalAssets",
+          "inputs": [
+            "idle",
+            "liquidityAdapter",
+            "liquidityData",
+            "m1.params",
+            "m1.supply",
+            "m1.state",
+            "totalAssets"
+          ]
+        },
+        {
+          "id": "B.liquidity.availableNow",
+          "status": "ok",
+          "kind": "derived",
+          "value": "36502195867773",
+          "unit": "USDC",
+          "display": "36,502,195.86 USDC",
+          "formula": "idle + min(supply_l, marketSupply_l − marketBorrow_l), l = the market in liquidityData of the liquidityAdapter (normal withdraw path: idle, then the liquidity adapter)",
+          "inputs": [
+            "idle",
+            "liquidityAdapter",
+            "liquidityData",
+            "m1.params",
+            "m1.supply",
+            "m1.state"
+          ]
+        },
+        {
+          "id": "B.exposure.markets",
+          "status": "ok",
+          "kind": "derived",
+          "value": [
+            {
+              "collateralSymbol": "weETH",
+              "lltv": "86.00%",
+              "marketId": "0x85252bb8485c99bba46fe149c7dd2aad83672640f53c630890673cf1848ba16e",
+              "marketLastUpdate": "1791214391",
+              "share": "18.64%",
+              "supplyApy": "4.36%",
+              "utilization": "89.57%"
+            },
+            {
+              "collateralSymbol": "cbBTC",
+              "lltv": "86.00%",
+              "marketId": "0x64d65c9a2d91c36d56fbc42d69e979335320169b3df63bf92789e2c8883fcc64",
+              "marketLastUpdate": "1791214751",
+              "share": "55.96%",
+              "supplyApy": "4.24%",
+              "utilization": "89.26%"
+            },
+            {
+              "collateralSymbol": "wstETH",
+              "lltv": "86.00%",
+              "marketId": "0x7e585a933ffe8443c371b4f8cfeb4430f5f6a14c2f32a898c26662c67a1cb8b8",
+              "marketLastUpdate": "1791214391",
+              "share": "5.72%",
+              "supplyApy": "4.36%",
+              "utilization": "89.95%"
+            },
+            {
+              "collateralSymbol": "WBTC",
+              "lltv": "86.00%",
+              "marketId": "0x09dc9e7eb5d8fc54b2bc41d1135fd4e99057a580f680321faeb90c7a21e631c1",
+              "marketLastUpdate": "1791214391",
+              "share": "0.91%",
+              "supplyApy": "4.25%",
+              "utilization": "88.97%"
+            },
+            {
+              "collateralSymbol": "weETH",
+              "lltv": "77.00%",
+              "marketId": "0x34377fc4f617c51818e92c79df31ff270c6a91bc94ad32e367fdf59b9f4ac5dd",
+              "marketLastUpdate": "1791214391",
+              "share": "0.28%",
+              "supplyApy": "4.25%",
+              "utilization": "90.75%"
+            },
+            {
+              "collateralSymbol": "WETH",
+              "lltv": "86.00%",
+              "marketId": "0x94b823e6bd8ea533b4e33fbc307faea0b307301bc48763acc4d4aa4def7636cd",
+              "marketLastUpdate": "1791214391",
+              "share": "2.37%",
+              "supplyApy": "4.25%",
+              "utilization": "88.18%"
+            },
+            {
+              "collateralSymbol": "wstETH",
+              "lltv": "86.00%",
+              "marketId": "0xb323495f7e4148be5643a4ea4a8221eef163e4bccfdedc2a6f4696baacbc86cc",
+              "marketLastUpdate": "1791214391",
+              "share": "3.09%",
+              "supplyApy": "4.25%",
+              "utilization": "89.57%"
+            },
+            {
+              "collateralSymbol": "WBTC",
+              "lltv": "86.00%",
+              "marketId": "0x3a85e619751152991742810df6ec69ce473daef99e28a64ab2340d7b7ccfee49",
+              "marketLastUpdate": "1791214391",
+              "share": "13.03%",
+              "supplyApy": "4.26%",
+              "utilization": "88.55%"
+            },
+            {
+              "collateralSymbol": "cbBTC",
+              "lltv": "86.00%",
+              "marketId": "0xbc99de6a88904cd0e69042ad6f266e63182801f030c636507c3caf590ffd84fe",
+              "marketLastUpdate": "1791212951",
+              "share": "0.02%",
+              "supplyApy": "4.22%",
+              "utilization": "90.48%"
+            },
+            {
+              "marketId": "idle",
+              "share": "0.00%"
+            }
+          ],
+          "unit": "list",
+          "display": "9 markets (0 dust omitted), idle 0.00%",
+          "formula": "per market: supply_i / totalAssets, utilization = marketBorrow / marketSupply",
+          "inputs": [
+            "totalAssets",
+            "idle",
+            "m0.id",
+            "m0.supply",
+            "m0.params",
+            "m0.state",
+            "m0.collateral",
+            "m0.rate",
+            "m1.id",
+            "m1.supply",
+            "m1.params",
+            "m1.state",
+            "m1.collateral",
+            "m1.rate",
+            "m2.id",
+            "m2.supply",
+            "m2.params",
+            "m2.state",
+            "m2.collateral",
+            "m2.rate",
+            "m3.id",
+            "m3.supply",
+            "m3.params",
+            "m3.state",
+            "m3.collateral",
+            "m3.rate",
+            "m4.id",
+            "m4.supply",
+            "m4.params",
+            "m4.state",
+            "m4.collateral",
+            "m4.rate",
+            "m5.id",
+            "m5.supply",
+            "m5.params",
+            "m5.state",
+            "m5.collateral",
+            "m5.rate",
+            "m6.id",
+            "m6.supply",
+            "m6.params",
+            "m6.state",
+            "m6.collateral",
+            "m6.rate",
+            "m7.id",
+            "m7.supply",
+            "m7.params",
+            "m7.state",
+            "m7.collateral",
+            "m7.rate",
+            "m8.id",
+            "m8.supply",
+            "m8.params",
+            "m8.state",
+            "m8.collateral",
+            "m8.rate"
+          ]
+        },
+        {
+          "id": "B.exposure.topMarketShare",
+          "status": "ok",
+          "kind": "derived",
+          "value": "0.559590",
+          "unit": "ratio",
+          "display": "55.96%",
+          "formula": "max(supply_i / totalAssets)",
+          "inputs": [
+            "totalAssets",
+            "m0.supply",
+            "m1.supply",
+            "m2.supply",
+            "m3.supply",
+            "m4.supply",
+            "m5.supply",
+            "m6.supply",
+            "m7.supply",
+            "m8.supply"
+          ]
+        },
+        {
+          "id": "B.perf.realized.30d",
+          "status": "ok",
+          "kind": "derived",
+          "value": "0.044290",
+          "unit": "ratio per year",
+          "display": "4.43%",
+          "formula": "(sharePrice / sharePrice@30d)^(31536000 / 2603592) − 1; elapsed = block timestamp − blocks.30d timestamp",
+          "inputs": [
+            "sharePrice",
+            "sharePrice@30d",
+            "totalAssets@30d"
+          ]
+        },
+        {
+          "id": "B.perf.realized.90d",
+          "status": "ok",
+          "kind": "derived",
+          "value": "0.040750",
+          "unit": "ratio per year",
+          "display": "4.08%",
+          "formula": "(sharePrice / sharePrice@90d)^(31536000 / 7806144) − 1; elapsed = block timestamp − blocks.90d timestamp",
+          "inputs": [
+            "sharePrice",
+            "sharePrice@90d",
+            "totalAssets@90d"
+          ]
+        }
+      ]
+    }
+  }
+}
